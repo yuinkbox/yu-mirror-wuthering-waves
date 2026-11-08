@@ -1,0 +1,121 @@
+<div align="center">
+  <h1 align="center">
+    <img src="https://raw.githubusercontent.com/ok-oldking/ok-wuthering-waves/master/icons/icon.png" width="200" alt="ok-ww logo"/>
+    <br/>
+    ok-ww
+  </h1> 
+  
+  <p>
+    An image-recognition-based automation tool for Wuthering Waves, with background mode support, developed with <a href="https://ok-script.com">ok-script</a>.
+  </p>
+  
+  <p><i>Operates by simulating the Windows user interface, with no memory reading or file modification.</i></p>
+</div>
+
+<!-- Badges -->
+<div class="badge-row">
+  <img src="https://img.shields.io/badge/platform-Windows-blue" alt="Platform" />
+  <a href="https://discord.gg/vVyCatEBgA"><img src="https://img.shields.io/discord/296598043787132928?color=5865f2&amp;label=%20Discord" alt="Discord" /></a>
+</div>
+
+<p align="center"><strong>Official site:</strong> <a href="https://ok-script.com/ok-ww">https://ok-script.com/ok-ww</a></p>
+
+### English | [简体中文](../zh-CN/index.md) | [繁體中文](../zh-TW/index.md) | [日本語](../ja/index.md)
+
+**Demo & Tutorial:** [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtu.be/h6P1KWjdnB4)
+
+---
+
+## ⚠️ Disclaimer
+
+This software is an external auxiliary tool designed to automate parts of the Wuthering Waves gameplay. It interacts with the game solely by simulating standard user interface actions, in compliance with relevant laws and regulations. This project aims to simplify repetitive user tasks and does not disrupt game balance or provide an unfair advantage. It will never modify any game files or data.
+
+This software is open-source and free, intended for personal learning and communication purposes only. Do not use it for any commercial or profit-making activities. The development team reserves the right of final interpretation. Any issues arising from the use of this software are not the responsibility of this project or its developers.
+
+Please note, according to Kuro Games' official Fair Play Declaration for Wuthering Waves:
+> The use of any third-party tools to disrupt the game experience is strictly prohibited.
+> We will take strict measures against the use of unauthorized tools such as cheats, speed hacks, cheat software, and macro scripts. This includes, but is not limited to, automated farming, skill acceleration, god mode, teleportation, and modification of game data.
+> Once verified, we will impose penalties based on the severity and frequency of the violation, including but not limited to deducting illicit gains, and suspending or permanently banning the game account.
+
+**By using this software, you acknowledge that you have read, understood, and agreed to the above statement, and you voluntarily assume all potential risks.**
+
+## ✨ Main Features
+<img width="1778" height="1186" alt="QQ_1762961412161" src="https://github.com/user-attachments/assets/0109c68e-d714-4c34-b016-b4b45f9861fd" />
+
+*   **High-Resolution Support**: Runs smoothly on all 16:9 resolutions up to 4K (minimum 1280x720). Some features are also compatible with ultrawide resolutions like 21:9.
+*   **Background Mode**: Supports running in the background while the game window is minimized or obscured, allowing you to use your computer for other tasks.
+*   **Intelligent Recognition**: Automatically recognizes all characters, eliminating the need for manual skill sequence configuration. Start with a single click.
+*   **Auto-Mute**: Can automatically mute the game audio when running in the background.
+
+## 🔧 Troubleshooting
+
+If you encounter issues, please check the following steps one by one before asking for help:
+
+1.  **Antivirus Software**: Add the software's installation directory to the **exceptions or whitelist** of your antivirus software (including Windows Defender) to prevent files from being mistakenly deleted or blocked.
+2.  **Display Settings**:
+    *   In-game filters can generally be enabled.
+    *   Windows HDR can be enabled, but Auto HDR must be turned off.
+    *   It is recommended to turn off GPU filters such as RTX HDR, RTX Dynamic Vibrance, and AMD sharpening.
+    *   Use the game's default brightness settings.
+    *   Disable any overlays that display information on the game screen (e.g., frame rates from MSI Afterburner, Fraps, etc.).
+3.  **Custom Keybinds**: If you have changed the default in-game keybinds, you must update them accordingly in the `ok-ww` settings. Only the keybinds listed in the settings are supported.
+4.  **Software Version**: Check and ensure you are using the latest version of `ok-ww`.
+5.  **Game Performance**: Make sure the game can run stably at **60 FPS**. If the frame rate is unstable, try lowering the game's graphics quality or resolution.
+6.  **Game Disconnections**: Enable "Close Launcher After Start" in the `ok-ww` settings and make sure the launcher process is not running, or run `ok-ww` from source.
+7.  **OpenVINO Error**: If you encounter error `0x000005` on an Intel CPU with an NPU, update to the latest Intel NPU driver.
+8.  **Getting Help**: If the steps above do not solve your problem, please submit a detailed bug report through our community channels.
+9.  **Disable Auto Sprint**: Turn off Auto Sprint in the game settings.
+10. **Equip a Main Echo on Every Character**: Every character in the team must have a main Echo equipped (the Echo Skill icon should appear in the bottom-right corner). If any character does not have one, Auto Combat will not function correctly and may repeatedly lock onto enemies without attacking.
+
+---
+
+## 💻 Developer Zone
+
+### Running from Source
+
+See the [contributor guide](../development/contributing.md) for development setup, running from source, and contributions.
+
+### AI Skills
+
+Open this repository in a coding agent that supports project skills. Ask the agent for detailed usage, preparation, and workflow.
+
+Before evaluating or improving a team, select the team and enter 深境再临 or 终焉矩阵 in the game.
+
+| Skill | Description |
+| --- | --- |
+| [evaluate-team](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/evaluate-team/SKILL.md) | Evaluate the current team's automated combat over multiple runs and suggest improvements. |
+| [improve-team](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/improve-team/SKILL.md) | Propose and validate combat improvements based on a team evaluation. |
+| [ok-script-develop](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/ok-script-develop/SKILL.md) | Develop and validate game automation with ok-script. |
+| [ok-script-tasks](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/ok-script-tasks/SKILL.md) | Create, modify, or review automation tasks. |
+| [ok-ww-characters](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/ok-ww-characters/SKILL.md) | Develop, review, and test character combat logic. |
+| [ok-script-i18n](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/ok-script-i18n/SKILL.md) | Add, synchronize, and compile task UI translations. |
+| [pr-review](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/pr-review/SKILL.md) | Review or merge this project's GitHub PRs. |
+| [deploy](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/deploy/SKILL.md) | Commit completed changes, create a version tag, and publish. |
+| [use-local-venv](https://github.com/ok-oldking/ok-wuthering-waves/blob/master/.agents/skills/use-local-venv/SKILL.md) | Prefer the repository's local virtual environment for Python commands. |
+
+### Command-Line Arguments
+
+You can use command-line arguments for automated startup.
+
+```powershell
+# Example: Automatically run the first task after launch and exit the program upon completion
+.\.venv\Scripts\python.exe main.py -t 1 -e
+```
+
+*   `-t` or `--task`: Automatically runs the Nth task in the list after launch. `1` represents the first task.
+*   `-e` or `--exit`: Automatically exits the program after the task is completed.
+
+## 💬 Join Us
+
+This project is developed using the [ok-script](https://ok-script.com) framework and is designed to be simple and easy to maintain. Developers interested in creating their own automation projects are welcome to use [ok-script](https://ok-script.com).
+
+## ❤️ Sponsors & Acknowledgements
+
+### Sponsors
+*   **EXE Signing**: Free code signing provided by [SignPath.io](https://signpath.io/), certificate by [SignPath Foundation](https://signpath.org/).
+
+### Acknowledgements
+*   [lazydog28/mc_auto_boss](https://github.com/lazydog28/mc_auto_boss)
+*   [ok-oldking/OnnxOCR](https://github.com/ok-oldking/OnnxOCR)
+*   [zhiyiYo/PyQt-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
+*   [Toufool/AutoSplit](https://github.com/Toufool/AutoSplit)

@@ -1,0 +1,14 @@
+name: "yu-mingchao-pro"
+uac: true
+icon: "icons/icon.png"
+website: "https://github.com/your-name/yu-mingchao-pro"
+
+# 打包分发用（可选）。git_url 指向你自己的更新仓库后再启用。
+profiles:
+  - name: "Global"
+    git_url: "https://github.com/your-name/yu-mingchao-pro-update.git"
+    main_script: "main.py"
+    requires_python: "3.12"
+    requirements: "requirements.txt"
+    use_pythonw: true
+    show_add_defender: true
