@@ -6,7 +6,7 @@
       - 色板（zinc 中性色 + 反色 primary，即 shadcn 默认主题）
       - 字体（Inter / Segoe UI Variable，13px 基准）
       - 圆角（卡片 12px、控件 6px，对应 shadcn 的 rounded-xl / rounded-md）
-      - 关掉 Mica/Acrylic 毛玻璃，改成 shadcn 的纯色平面
+      - 打开 Mica/Acrylic 毛玻璃，外壳与卡片用半透明色贴在玻璃上
       - primary 按钮文字色改成 on-primary（浅色白字、深色黑字）
       - 侧边栏选中项、标签页轨道改成 shadcn 的 muted 色块 / 白 pill
 
@@ -102,6 +102,9 @@ def _restyle(css: str, manager) -> str:
     for old, new in _RADIUS_MAP.items():
         css = css.replace(f"border-radius: {old}", f"border-radius: {new}")
 
+    # 1.5) 玻璃窗口自己画背板，QSS 不能再铺一层不透明底
+    css = _sub_rule(css, r"QWidget#kitRoot, KitWindow ", "QWidget#kitRoot, KitWindow { background: transparent; }")
+
     # 2) primary 上的文字：浅色主题白字，深色主题黑字
     on_accent = ON_ACCENT["dark" if dark else "light"]
     css = css.replace(
@@ -140,36 +143,49 @@ def _restyle(css: str, manager) -> str:
 
     # 5) 侧边栏选中项：6px 圆角、无描边（由 _patch_selection_painters 绘制）
     css = _sub_rule(css, r"NavItem ", "NavItem { background: transparent; border: 0; border-radius: 6px; }")
+    # kit 自带 `NavItem:hover { background: control_hover }` 是 QSS 直出、没有过渡，
+    # 鼠标扫过会「啪」地闪一块灰。这里全部压成透明，hover/选中的颜色交给
+    # app_ui/motion.py 的 AnimatedButton 自己插值，才有 190ms 的柔和过渡。
+    css = _sub_rule(
+        css,
+        r"NavItem:hover",
+        "NavItem:hover, NavItem:pressed, NavItem:checked, "
+        "NavItem:hover:checked, NavItem:pressed:checked "
+        "{ background: transparent; border-color: transparent; }",
+    )
 
     # 6)（旧版两栏任务页的样式已移除，任务页改由 app_ui/motion.py 自绘）
 
     # 7) 自己的应用外壳（app_ui/window.py）
+    #    玻璃窗口：外壳一律透明，让 DWM 的 Acrylic 透上来；分隔线用半透明发丝线。
+    edge = "rgba(255, 255, 255, 210)" if not dark else "rgba(255, 255, 255, 28)"
+    film = "rgba(255, 255, 255, 38)" if not dark else "rgba(240, 240, 245, 18)"
     css += """
-QWidget#appRoot, QWidget#appContent { background: %(window)s; }
-QFrame#appSidebar { background: %(sidebar)s; border-right: 1px solid %(border)s; }
-QFrame#appStatusBar { background: %(window)s; border-bottom: 1px solid %(border)s; }
+QWidget#appRoot, QWidget#appContent { background: transparent; }
+QFrame#appSidebar { background: %(film)s; border-right: 1px solid %(edge)s; }
+QFrame#appStatusBar { background: transparent; border-bottom: 1px solid %(edge)s; }
 QStackedWidget#appStack { background: transparent; }
-""" % {
-        "window": tokens["window"], "sidebar": tokens["sidebar"], "border": tokens["border"],
-    }
+QWidget#appPageHost, QWidget#TasksPage, QWidget#AboutTab { background: transparent; }
+""" % {"film": film, "edge": edge}
 
-    # 8) 任务列表（手风琴）与登录框
+    # 8) 任务列表（手风琴）与登录框：玻璃卡片
+    card = "rgba(255, 255, 255, 84)" if not dark else "rgba(20, 20, 24, 88)"
     css += """
-QFrame#taskGroup { background: transparent; border: 1px solid %(border)s; border-radius: 10px; }
+QFrame#taskGroup { background: %(card)s; border: 1px solid %(edge)s; border-radius: 10px; }
 QLabel#taskName { font-size: 13.5px; font-weight: 500; }
 QLabel#taskDesc { color: %(text_tertiary)s; font-size: 12px; }
 QLabel#taskStatus { color: %(text_secondary)s; font-size: 12px; }
-QFrame#authCard { background: %(window)s; border: 1px solid %(border_strong)s; border-radius: 14px; }
+QFrame#authCard { background: %(card)s; border: 1px solid %(edge)s; border-radius: 14px; }
 QLabel#authError { color: %(danger)s; font-size: 12px; }
 QLabel#userAvatar {
     background: %(hover)s; color: %(text_secondary)s; border-radius: 12px;
     font-size: 11px; font-weight: 600;
 }
 """ % {
-        "border": tokens["border"],
+        "card": card,
+        "edge": edge,
         "hover": tokens["control_hover"],
         "text_secondary": tokens["text_secondary"], "text_tertiary": tokens["text_tertiary"],
-        "window": tokens["window"], "border_strong": tokens["border_strong"],
         "danger": tokens["danger"],
     }
 
@@ -182,7 +198,7 @@ def _rgb(hex_color: str) -> str:
 
 
 def _force_flat_backdrop(theme_module) -> None:
-    """shadcn 是纯色平面，不要 Mica/Acrylic 毛玻璃。"""
+    """把 Mica/Acrylic 强制关掉（需要「纯色平面」时用，现在默认不开）。"""
 
     original = theme_module.ThemeManager.set_backdrop
 
@@ -190,6 +206,18 @@ def _force_flat_backdrop(theme_module) -> None:
         return original(self, theme_module.Backdrop.NONE)
 
     theme_module.ThemeManager.set_backdrop = set_backdrop
+
+
+def _enable_glass(theme_module) -> None:
+    """打开 DWM 背板（Acrylic），并把遮罩浓度调淡，让玻璃真的透出来。"""
+
+    tint = theme_module.BACKDROP_TINT
+    tint[(theme_module.Backdrop.ACRYLIC, False)] = 0.45
+    tint[(theme_module.Backdrop.ACRYLIC, True)] = 0.60
+    # 内容区那层「自绘 Mica」的压色也要淡，否则壁纸纹理全被盖平
+    tint[(theme_module.Backdrop.MICA, False)] = 0.22
+    tint[(theme_module.Backdrop.MICA, True)] = 0.32
+    theme_module.theme.set_backdrop(theme_module.Backdrop.ACRYLIC)
 
 
 def _patch_selection_painters() -> None:
@@ -272,7 +300,7 @@ def apply() -> None:
 
     kit_qss.build_stylesheet = build
 
-    _force_flat_backdrop(kit_theme)
+    _enable_glass(kit_theme)
     _patch_selection_painters()
 
     # primary 用 shadcn 的反色，并且锁住（设置页的强调色选择器不再生效）

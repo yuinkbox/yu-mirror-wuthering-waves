@@ -1,6 +1,6 @@
-# Yu-Mingchao Pro
+# Yu-Mirror · 鸣潮
 
-> 一个基于**图像识别**的《鸣潮》（Wuthering Waves）自动化工具，从 [ok-ww](https://github.com/ok-oldking/ok-wuthering-waves) 二次开发而来。
+> 「镜」系列的第一件工具：一个基于**图像识别**的《鸣潮》（Wuthering Waves）自动化助手，从 [ok-ww](https://github.com/ok-oldking/ok-wuthering-waves) 二次开发而来。
 > 通过模拟键鼠操作与屏幕识别工作：**不读内存、不改游戏文件**。
 
 本仓库是「我自己的版本」：沿用 ok-ww 的识别素材、任务框架与角色逻辑，在外层换成自己的品牌、
@@ -29,7 +29,7 @@
 
 | 入口 | 行为 |
 | --- | --- |
-| **桌面快捷方式 `Yu-Mingchao Pro`** / `start-silent.vbs` | **无控制台窗口**，直接出界面（和官方安装版一样） |
+| **桌面快捷方式 `鸣潮 · 镜`** / `start-silent.vbs` | **无控制台窗口**，直接出界面（和官方安装版一样） |
 | `start.bat` | 带控制台启动，能看到实时日志，**排查问题、看报错用这个** |
 | `start.ps1` | 带参数的启动（自动跑任务、跑完退出等） |
 

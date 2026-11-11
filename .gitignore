@@ -80,3 +80,10 @@ repo/
 
 assets/result.json
 src/gui/CharacterCodeTab.py
+
+# 本地开发/预览产生的临时物（不进仓库）
+configs_preview/
+ok-kit-icons/
+tools/_*
+*.log
+_min.txt

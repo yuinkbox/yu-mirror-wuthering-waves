@@ -39,7 +39,7 @@ def ensure_application() -> QApplication:
     application = QApplication.instance()
     if application is None:
         application = QApplication(sys.argv)
-    application.setApplicationName("Yu-Mingchao Pro")
+    application.setApplicationName("Yu-Mirror 鸣潮")
     application.setApplicationDisplayName("")
     return application
 
@@ -120,7 +120,7 @@ class Splash(QWidget):
             if not pixmap.isNull():
                 logo.setPixmap(pixmap.scaled(44, 44, Qt.AspectRatioMode.KeepAspectRatio,
                                              Qt.TransformationMode.SmoothTransformation))
-        name = QLabel("Yu-Mingchao Pro")
+        name = QLabel("Yu-Mirror 鸣潮")
         name.setStyleSheet("color: #FAFAFA; font-size: 15px; font-weight: 600; background: transparent;")
         self.caption = QLabel("正在启动…")
         self.caption.setStyleSheet("color: #A1A1AA; font-size: 12px; background: transparent;")

@@ -8,9 +8,9 @@ from src.game_launcher import get_game_launch_arguments
 from src.task.process_feature import process_feature
 from src.task.task_icons import task_icon
 
-APP_NAME = "Yu-Mingchao Pro"
-APP_ID = "yu-mingchao-pro"
-version = "1.0.0"
+APP_NAME = "Yu-Mirror · 鸣潮"
+APP_ID = "yu-mirror-wuthering-waves"
+version = "1.1.0"
 
 
 def _find_most_recently_run_pc_exe():
@@ -243,11 +243,11 @@ config = {
     # TODO: 换成你自己的地址；暂时保留上游文档作为帮助入口
     'links': {
         'default': {
-            'github': 'https://github.com/your-name/yu-mingchao-pro',
+            'github': 'https://github.com/yuinkbox/yu-mirror-wuthering-waves',
             'faq': 'https://ok-script.com/ok-ww/'
         },
         'zh_CN': {
-            'github': 'https://github.com/your-name/yu-mingchao-pro',
+            'github': 'https://github.com/yuinkbox/yu-mirror-wuthering-waves',
             'faq': 'https://ok-script.com/ok-ww',
         },
     },
@@ -256,7 +256,7 @@ config = {
     <strong>本软件是免费开源的。</strong> 如果你被收费，请立即退款。
     </p>
     <p>
-        Yu-Mingchao Pro 基于 ok-ww（AGPL-3.0）二次开发，沿用其图像识别与任务框架，
+        Yu-Mirror（鸣潮 · 镜）基于 ok-ww（AGPL-3.0）二次开发，沿用其图像识别与任务框架，
         并在此基础上做自己的品牌与功能。
     </p>
     <p style="color:red;">

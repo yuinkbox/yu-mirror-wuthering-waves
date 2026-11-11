@@ -1,4 +1,4 @@
-﻿import setuptools
+import setuptools
 from Cython.Build import cythonize
 from distutils.extension import Extension
 from setuptools import Extension
@@ -34,12 +34,12 @@ base_dir = "src"
 extensions = find_pyx_packages(base_dir)
 
 setuptools.setup(
-    name="yu-mingchao-pro",
-    version="1.0.0",
-    author="yu-mingchao-pro",
+    name="yu-mirror-wuthering-waves",
+    version="1.1.0",
+    author="yuinkbox",
     author_email="",
     description="Wuthering Waves automation based on ok-ww (AGPL-3.0)",
-    url="https://github.com/your-name/yu-mingchao-pro",
+    url="https://github.com/yuinkbox/yu-mirror-wuthering-waves",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[

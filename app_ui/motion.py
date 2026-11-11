@@ -25,7 +25,7 @@ from PySide6.QtCore import (
     Signal,
 )
 from PySide6.QtGui import QColor, QFont, QFontMetrics, QPainter, QPen
-from PySide6.QtWidgets import QGraphicsOpacityEffect, QSizePolicy, QWidget
+from PySide6.QtWidgets import QGraphicsOpacityEffect, QLineEdit, QSizePolicy, QWidget
 
 from ok.ui.qt.kit import theme
 from ok.ui.qt.kit.icons import icon as kit_icon
@@ -209,8 +209,8 @@ class AnimatedButton(QWidget):
             painter.setPen(pen)
             painter.setBrush(Qt.BrushStyle.NoBrush)
             painter.drawRoundedRect(rect, self._radius, self._radius)
-        # 键盘焦点环（Tab 导航时可见）
-        if self.hasFocus():
+        # 键盘焦点环（只有 Tab 导航时才画；鼠标点出来的焦点不画，免得盖在选中块上）
+        if self.hasFocus() and getattr(self, "_focus_ring", False):
             ring = QColor(theme.color("accent"))
             ring.setAlpha(110)
             pen = QPen(ring)
@@ -262,7 +262,17 @@ class AnimatedButton(QWidget):
     def mousePressEvent(self, event):
         if event.button() == Qt.MouseButton.LeftButton and self._enabled:
             self._press.to(1.0)
+            self._focus_ring = False
         super().mousePressEvent(event)
+
+    def focusInEvent(self, event):
+        self._focus_ring = event.reason() in (
+            Qt.FocusReason.TabFocusReason,
+            Qt.FocusReason.BacktabFocusReason,
+            Qt.FocusReason.ShortcutFocusReason,
+        )
+        super().focusInEvent(event)
+        self.update()
 
     def mouseReleaseEvent(self, event):
         self._press.to(0.0)
@@ -272,16 +282,71 @@ class AnimatedButton(QWidget):
         super().mouseReleaseEvent(event)
 
 
+class SoftLineEdit(QLineEdit):
+    """带过渡的输入框：焦点边框从灰渐变到主色，不会「啪」地切换。"""
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self._radius = 8.0
+        self._focus = _AnimatedValue(self, 170, QEasingCurve.Type.OutCubic)
+        self._hover = _AnimatedValue(self, 150, QEasingCurve.Type.OutCubic)
+        self.setAttribute(Qt.WidgetAttribute.WA_Hover, True)
+        theme.changed.connect(self.update)
+
+    def focusInEvent(self, event):
+        self._focus.to(1.0)
+        super().focusInEvent(event)
+
+    def focusOutEvent(self, event):
+        self._focus.to(0.0)
+        super().focusOutEvent(event)
+
+    def enterEvent(self, event):
+        self._hover.to(1.0)
+        super().enterEvent(event)
+
+    def leaveEvent(self, event):
+        self._hover.to(0.0)
+        super().leaveEvent(event)
+
+    def paintEvent(self, event):
+        painter = QPainter(self)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing, True)
+        rect = QRectF(self.rect()).adjusted(0.5, 0.5, -0.5, -0.5)
+        focus = self._focus.value
+        base = QColor(theme.color("control"))
+        base.setAlpha(150 if theme.is_dark() else 210)
+        border = mix(_token("border"), _token("accent"), focus)
+        border.setAlpha(round(150 + 105 * focus))
+        painter.setPen(Qt.PenStyle.NoPen)
+        painter.setBrush(base)
+        painter.drawRoundedRect(rect, self._radius, self._radius)
+        pen = QPen(border)
+        pen.setWidthF(1.0 + 0.6 * focus)
+        painter.setPen(pen)
+        painter.setBrush(Qt.BrushStyle.NoBrush)
+        painter.drawRoundedRect(rect, self._radius, self._radius)
+        painter.end()
+        super().paintEvent(event)
+
+
 class NavItem(AnimatedButton):
-    """侧边栏项：选中态也是动画过渡。"""
+    """侧边栏项：选中态也是动画过渡。
+
+    ``pill_managed = True`` 时选中背景由 Sidebar 统一画（那样才能在两个项之间
+    滑过去），这里只负责文字颜色的渐变。
+    """
 
     def __init__(self, key: str, text: str, icon_name: str, parent=None):
         super().__init__(text, icon_name, "ghost", height=34, align="left", parent=parent)
         self.key = key
+        self.pill_managed = False
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        # 侧栏比按钮更"软"一点：hover 210ms、选中 200ms，都是 OutCubic/OutQuint
+        self._hover._anim.setDuration(210)
         self._selected = 0.0
         self._sel_anim = QVariantAnimation(self)
-        self._sel_anim.setDuration(160)
+        self._sel_anim.setDuration(200)
         self._sel_anim.setEasingCurve(EASING)
         self._sel_anim.valueChanged.connect(self._on_selected)
         self._selected_target = 0.0
@@ -304,11 +369,13 @@ class NavItem(AnimatedButton):
         base, hover, text, border = super()._colors()
         selected_bg = _token("control_hover")
         selected_text = _token("text")
-        bg = mix(base, selected_bg, self._selected)
-        if self._hover.value > 0:
-            bg = mix(bg, hover, self._hover.value * (1 - self._selected))
+        # hover 只用一层很淡的雾（alpha 70 上下），并且越接近「已选中」越弱：
+        # 不然鼠标扫过去就是一整块灰板瞬移，看着硬。
+        hover_soft = QColor(selected_bg)
+        hover_soft.setAlpha(max(0, round((64 if theme.is_dark() else 78) * (1 - self._selected))))
+        bg = QColor(0, 0, 0, 0) if self.pill_managed else mix(QColor(0, 0, 0, 0), selected_bg, self._selected)
         color = mix(text, selected_text, self._selected)
-        return bg, hover, color, None
+        return bg, hover_soft, color, None
 
 
 # ---------------------------------------------------------------- 窗口/页面
@@ -319,7 +386,21 @@ def fade_in_window(window: QWidget, duration: int = DURATION_WINDOW) -> None:
 
     只动 windowOpacity，不动窗口位置——移动原生窗口会让 Windows 重排合成，
     在低端显卡上就是明显的抖动，这也是上一版「生硬」的来源之一。
+
+    注意：有 DWM 背板（Mica/Acrylic）时窗口是半透明的，改 windowOpacity
+    会让 Windows 把窗口变成分层窗口，毛玻璃直接失效，所以那种情况下
+    改成只淡入内容。
     """
+
+    try:
+        from ok.ui.qt.kit import theme as _kit_theme
+        from ok.ui.qt.kit.theme import Backdrop
+
+        if _kit_theme.backdrop() != Backdrop.NONE:
+            fade_in_widget(window, duration)
+            return
+    except Exception:  # noqa: BLE001
+        pass
 
     window.setWindowOpacity(0.0)
     fade = QPropertyAnimation(window, b"windowOpacity", window)

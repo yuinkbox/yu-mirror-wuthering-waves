@@ -37,7 +37,7 @@ class AboutTab(QWidget):
                     64, 64, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation))
         icon_label.setFixedSize(64, 64)
 
-        title = Label(self.config.get("gui_title") or "Yu-Mingchao Pro", "title")
+        title = Label(self.config.get("gui_title") or "Yu-Mirror 鸣潮", "title")
         version = Label(f"v{self.config.get('version', '')}", "secondary")
         head_text = QVBoxLayout()
         head_text.setSpacing(2)

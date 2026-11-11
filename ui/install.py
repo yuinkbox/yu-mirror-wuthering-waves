@@ -20,6 +20,8 @@ logger = Logger.get_logger(__name__)
 def install() -> None:
     import importlib
 
+    _apply_app_identity()
+
     # 1) 整个主窗口外壳
     main_window_mod = importlib.import_module("ok.ui.qt.MainWindow")
     from app_ui.window import AppWindow
@@ -43,6 +45,30 @@ def install() -> None:
     logger.info("custom UI installed: AppWindow shell, TasksPage, AboutTab, monochrome icons")
 
     _install_auth_gate()
+
+
+def _apply_app_identity() -> None:
+    """任务栏图标 / 分组：给进程一个自己的 AppUserModelID，并把 app 图标挂上去。
+
+    KitWindow 是无边框窗口，Windows 会拿「窗口类」的图标去画任务栏按钮；光给
+    窗口 setWindowIcon 有时不生效，所以这里同时设 QApplication 图标和 AUMID。
+    """
+
+    import ctypes
+    import os
+
+    from PySide6.QtGui import QIcon
+    from PySide6.QtWidgets import QApplication
+
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    icon_path = os.path.join(base, "icons", "app.ico")
+    application = QApplication.instance()
+    if application is not None and os.path.isfile(icon_path):
+        application.setWindowIcon(QIcon(icon_path))
+    try:
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("yuinkbox.YuMirror.WutheringWaves")
+    except Exception:  # noqa: BLE001 - 旧系统上没有这个接口，忽略
+        logger.debug("SetCurrentProcessExplicitAppUserModelID failed", exc_info=True)
 
 
 def _install_auth_gate() -> None:

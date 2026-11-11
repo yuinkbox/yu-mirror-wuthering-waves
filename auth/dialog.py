@@ -15,12 +15,14 @@ import math
 
 from PySide6.QtCore import (
     QEasingCurve,
+    QEvent,
     QParallelAnimationGroup,
     QPoint,
     QPropertyAnimation,
     QRect,
     QRectF,
     Qt,
+    QTimer,
     QVariantAnimation,
 )
 from PySide6.QtGui import QColor, QLinearGradient, QPainter, QPixmap
@@ -38,7 +40,7 @@ from PySide6.QtWidgets import (
 from ok.ui.qt.kit import Label, theme
 
 from app_ui.frosted import FrostedCard, backdrop_for
-from app_ui.motion import AnimatedButton
+from app_ui.motion import AnimatedButton, SoftLineEdit
 from auth.store import AuthStore, session
 
 CARD_WIDTH = 400
@@ -96,14 +98,21 @@ class AuthDialog(QDialog):
         self._setup_mode = not store.has_users()
         self._animated_in = False
         self._backdrop = None
+        self._glass_ready = False
+        # 玻璃底每 300ms 重新截一次，背后内容变了也能跟上（这是它和「开机那张死图」的区别）
+        self._backdrop_ready = False
+        self._backdrop_timer = QTimer(self)
+        self._backdrop_timer.setInterval(90)
+        self._backdrop_timer.timeout.connect(self._tick_backdrop)
 
         self.setObjectName("authDialog")
         self.setWindowFlag(Qt.WindowType.FramelessWindowHint, True)
         import os as _os
         if _os.environ.get("YMP_DIALOG_TOPMOST") == "1":
             self.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint, True)
-        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground, True)
-        # 窗口自身不画任何底色（否则第一帧可能露出白块）
+        # 注意：这里千万不能再开 WA_TranslucentBackground——那会让 Qt 走
+        # WS_EX_LAYERED 分层窗口，分层窗口上 DWM 的亚克力背板不会渲染，
+        # 结果就是「一点玻璃感都没有」。背板由 paintEvent 的 Source 填充提供。
         self.setAttribute(Qt.WidgetAttribute.WA_NoSystemBackground, True)
         self.setAutoFillBackground(False)
         palette = self.palette()
@@ -114,7 +123,7 @@ class AuthDialog(QDialog):
         self.setModal(True)
         self.setFixedWidth(CARD_WIDTH + MARGIN * 2)
 
-        self.card = FrostedCard(14, self)
+        self.card = FrostedCard(0, self)
         self.card.setFixedWidth(CARD_WIDTH)
         self.card.setGeometry(0, 0, CARD_WIDTH, 0)
 
@@ -129,17 +138,18 @@ class AuthDialog(QDialog):
         self.subtitle = Label("", "secondary")
         self.subtitle.setWordWrap(True)
 
-        self.username = QLineEdit()
+        self.username = SoftLineEdit()
         self.username.setPlaceholderText("账号")
         self.username.setText(store.last_username())
-        self.password = QLineEdit()
+        self.password = SoftLineEdit()
         self.password.setPlaceholderText("密码")
         self.password.setEchoMode(QLineEdit.EchoMode.Password)
-        self.confirm = QLineEdit()
+        self.confirm = SoftLineEdit()
         self.confirm.setPlaceholderText("再次输入密码")
         self.confirm.setEchoMode(QLineEdit.EchoMode.Password)
         self.confirm.setVisible(self._setup_mode)
         for field in (self.username, self.password, self.confirm):
+            field.setObjectName("softInput")
             field.setMinimumHeight(38)
         # 用户名回车直接跳到密码，避免「账号填完一按回车就报错」
         self.username.returnPressed.connect(lambda: self.password.setFocus())
@@ -243,7 +253,11 @@ class AuthDialog(QDialog):
         # 先只裁玻璃底，把入场动画推迟一个事件循环：
         # 这样第一帧一定是「窗口不可见 + 卡片透明」，等系统把它合成出来之后
         # 再打开窗口做动画，不会出现「先闪一块底色再出现登录窗」。
-        self._update_backdrop()
+        from PySide6.QtCore import QTimer as _QTimer
+
+        self._backdrop_ready = True
+        # 挂 DWM 背板（和主窗口同一套）：真·实时玻璃，不需要自己截屏
+        self._enable_glass()
         # 启动画面在这一刻开始淡出，和登录卡入场交叉进行
         try:
             from app_ui import splash
@@ -284,11 +298,44 @@ class AuthDialog(QDialog):
 
         chain(0)
 
+    def _raise_to_front(self) -> None:
+        """把登录窗压到别的软件上面。
+
+        启动画面刚消失、主窗口还没建，这一瞬间我们的进程没有前台权限，
+        Qt 的 activateWindow() 常常抢不过别的窗口。Win32 允许「置顶再撤回」
+        绕过前台锁，所以这里先 SetWindowPos(HWND_TOPMOST)，再还原成普通层级。
+        """
+
+        self.raise_()
+        self.activateWindow()
+
+        import sys
+
+        if sys.platform != "win32":
+            return
+        try:
+            import ctypes
+
+            user32 = ctypes.windll.user32
+            hwnd = int(self.winId())
+            flags = 0x0002 | 0x0001 | 0x0040  # NOMOVE | NOSIZE | SHOWWINDOW
+            user32.SetWindowPos(hwnd, -1, 0, 0, 0, 0, flags)  # HWND_TOPMOST
+            self.raise_()
+            self.activateWindow()
+            user32.SetForegroundWindow(hwnd)
+            user32.SetWindowPos(hwnd, -2, 0, 0, 0, 0, flags)  # HWND_NOTOPMOST
+        except Exception:  # noqa: BLE001 - 拿不到前台就让系统自己决定
+            import logging
+
+            logging.getLogger(__name__).debug("raise login dialog failed", exc_info=True)
+
     def _start_entrance(self) -> None:
         self._debug_grab()
         if self._animated_in:
             return
         self._animated_in = True
+
+        self._raise_to_front()
 
         # 只用窗口级淡入：子控件的 QGraphicsOpacityEffect 在部分机器上会让
         # 窗口首帧合成异常（白块/不显示），这里全部不用。
@@ -328,38 +375,124 @@ class AuthDialog(QDialog):
 
         QTimer.singleShot(int(_duration(520) * 0.45), self._play_sheen)
 
-    def _update_backdrop(self) -> None:
-        """按卡片在屏幕上的位置裁一张模糊背景。"""
+    def _update_backdrop(self, refresh: bool = True) -> None:
+        """占位：玻璃底已经交给 DWM 的 Acrylic 背板，这里不再自绘。
 
-        origin = self.mapToGlobal(QPoint(MARGIN, MARGIN))
-        pixmap = backdrop_for(QRect(origin, self.card.size()))
-        self.card.set_backdrop(pixmap)
-        self._backdrop = pixmap
-        self.update()
-
-    def paintEvent(self, event):
-        """兜底：窗口自己也画磨砂底。
-
-        正常情况下这张图被卡片盖住看不见；但万一卡片还没画、或系统先合成了一帧，
-        露出来的也是模糊玻璃而不是系统白底。
+        早期版本会在每次移动/点击时截屏 + 模糊再画进卡片，结果是「一碰就
+        变成一张固定的磨砂图」——因为把自己的窗口也截进去了。现在整条链路
+        都不用了，保留方法名只是为了别处旧调用不会炸。
         """
 
-        backdrop = getattr(self, "_backdrop", None)
-        if backdrop is None or backdrop.isNull():
+        self.card.set_backdrop(None)
+
+    def _tick_backdrop(self) -> None:
+        return
+
+    def hideEvent(self, event):
+        self._backdrop_timer.stop()
+        super().hideEvent(event)
+
+    def _enable_glass(self) -> None:
+        """给这个无边框对话框挂上 Acrylic 背板（Windows 11 22H2+）。"""
+
+        import sys
+
+        if sys.platform != "win32" or self._glass_ready:
             return
-        from PySide6.QtCore import QRectF
-        from PySide6.QtGui import QPainterPath
+        self._glass_ready = True
+        try:
+            import ctypes
+
+            hwnd = int(self.winId())
+            user32 = ctypes.windll.user32
+            dwmapi = ctypes.windll.dwmapi
+
+            # 关键一步：把无边框窗口的「标题栏/可调边框」样式加回去。
+            # DWM 只对「像普通窗口」的窗口套用自己的圆角 + 亚克力裁剪；
+            # 纯 FramelessWindowHint 的窗口它不裁，四角就会露出整块矩形背板。
+            GWL_STYLE = -16
+            WS_CAPTION, WS_THICKFRAME = 0x00C00000, 0x00040000
+            WS_MINIMIZEBOX, WS_MAXIMIZEBOX, WS_SYSMENU = 0x00020000, 0x00010000, 0x00080000
+            user32.GetWindowLongW.restype = ctypes.c_long
+            style = user32.GetWindowLongW(hwnd, GWL_STYLE)
+            user32.SetWindowLongW(
+                hwnd,
+                GWL_STYLE,
+                style | WS_CAPTION | WS_THICKFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU,
+            )
+
+            acrylic = ctypes.c_int(3)  # DWMSBT_TRANSIENTWINDOW = Acrylic
+            dwmapi.DwmSetWindowAttribute(hwnd, 38, ctypes.byref(acrylic), ctypes.sizeof(acrylic))
+
+            class _Margins(ctypes.Structure):
+                _fields_ = [("left", ctypes.c_int), ("right", ctypes.c_int),
+                            ("top", ctypes.c_int), ("bottom", ctypes.c_int)]
+
+            # 从底边往下扩，把整个客户区交给 DWM 的玻璃层；用 -1 会让 DWM 在
+            # 我们半透明的标题区后面多画一排系统按钮。
+            margins = _Margins(0, 0, 0, 32767)
+            dwmapi.DwmExtendFrameIntoClientArea(hwnd, ctypes.byref(margins))
+
+            corner = ctypes.c_int(2)  # DWMWCP_ROUND
+            dwmapi.DwmSetWindowAttribute(hwnd, 33, ctypes.byref(corner), ctypes.sizeof(corner))
+            color = ctypes.c_int(-2)  # DWMWA_COLOR_NONE，不要系统描边
+            dwmapi.DwmSetWindowAttribute(hwnd, 34, ctypes.byref(color), ctypes.sizeof(color))
+
+            # SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED
+            user32.SetWindowPos(hwnd, None, 0, 0, 0, 0, 0x0002 | 0x0001 | 0x0004 | 0x0020)
+
+            # 关键：分层窗口（WS_EX_LAYERED）上 DWM 不会渲染亚克力背板。
+            # Qt 在无边框窗口上有时会自动加这个位，这里显式去掉。
+            GWL_EXSTYLE = -20
+            WS_EX_LAYERED = 0x00080000
+            user32.GetWindowLongW.restype = ctypes.c_long
+            exstyle = user32.GetWindowLongW(hwnd, GWL_EXSTYLE)
+            if exstyle & WS_EX_LAYERED:
+                user32.SetWindowLongW(hwnd, GWL_EXSTYLE, exstyle & ~WS_EX_LAYERED)
+                user32.SetWindowPos(hwnd, None, 0, 0, 0, 0, 0x0002 | 0x0001 | 0x0004 | 0x0020)
+
+            # 背板已经由 DWM 提供，卡片自己就别再叠一层白纱了：
+            # 否则会像「磨砂贴图」，而不是像主界面那样透出背后。
+            self.card._tint_strength = 0.12
+            self.card._fallback_alpha = 10
+            self.card.update()
+        except Exception:  # noqa: BLE001 - 老系统没有背板就直接退回半透明色
+            import logging
+
+            logging.getLogger(__name__).debug("enable acrylic for login dialog failed", exc_info=True)
+
+    def _apply_round_mask(self) -> None:
+        """不再用 mask：窗口本身全透明，圆角由卡片自己画。
+
+        （mask + DWM 背板会在边缘合成出一条 2px 的灰边，实测无法靠调色消除；
+        改为「窗口透明 + 卡片圆角」后，圆角外就是真正的桌面。）
+        """
+
+        return
+
+    def resizeEvent(self, event):
+        super().resizeEvent(event)
+
+    def paintEvent(self, event):
+        """用和主窗口相同的方式铺背板。
+
+        不用 ``theme.background("window")``——主题模块在某些时机会被重置成
+        ``Backdrop.NONE``，那时它返回不透明色，一点下去窗口就变成一块死板。
+        这里写死一个半透明底色，任何时候都让 DWM 的玻璃透上来。
+        """
 
         painter = QPainter(self)
-        painter.setRenderHint(QPainter.RenderHint.Antialiasing, True)
-        path = QPainterPath()
-        path.addRoundedRect(QRectF(self.rect()), 14, 14)
-        painter.setClipPath(path)
-        painter.drawPixmap(self.rect(), backdrop)
-        tint = QColor(10, 10, 12) if theme.is_dark() else QColor(255, 255, 255)
-        tint.setAlphaF(0.80)
-        painter.fillRect(self.rect(), tint)
+        painter.setCompositionMode(QPainter.CompositionMode.CompositionMode_Source)
+        fill = QColor(16, 17, 20, 118) if theme.is_dark() else QColor(248, 249, 252, 92)
+        painter.fillRect(self.rect(), fill)
         painter.end()
+
+    def changeEvent(self, event):
+        # 窗口激活状态变化时 DWM 会重算背板，顺手把属性再设一遍（幂等、很便宜）
+        super().changeEvent(event)
+        if event.type() == QEvent.Type.ActivationChange and self.isVisible():
+            self._enable_glass()
+            self.card.update()
 
     def _play_sheen(self) -> None:
         self.sheen.show()
@@ -431,14 +564,21 @@ class AuthDialog(QDialog):
         animation.start(QVariantAnimation.DeletionPolicy.DeleteWhenStopped)
 
     def _finish(self) -> None:
-        """登录成功：把卡片收成一条线（overlay 接管），主窗口稍后从这条线撑开。"""
+        """登录成功：把「现在屏幕上的登录卡」交给转场层，由它溶解掉。
+
+        不能再用 ``self.card.grab()``——卡片本身是半透明的（只有 10 alpha 的
+        底色 + 一点白光），抓出来几乎全透明，溶解时什么都看不到。这里直接抓
+        屏幕上那块真实像素，连玻璃和背后的东西一起带走。
+        """
 
         try:
             from app_ui import morph
+            from app_ui.frosted import _grab_region
 
-            pixmap = self.card.grab()
             origin = self.mapToGlobal(QPoint(MARGIN, MARGIN))
             rect = QRect(origin, self.card.size())
+            image = _grab_region(rect)
+            pixmap = QPixmap.fromImage(image) if image is not None and not image.isNull() else None
             self.hide()
             morph.begin_collapse(pixmap, rect)
         except Exception:  # noqa: BLE001 - 转场失败就直接关掉，不能挡住登录
