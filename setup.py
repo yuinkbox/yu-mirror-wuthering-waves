@@ -35,7 +35,7 @@ extensions = find_pyx_packages(base_dir)
 
 setuptools.setup(
     name="yu-mirror-wuthering-waves",
-    version="1.1.0",
+    version="1.2.0",
     author="yuinkbox",
     author_email="",
     description="Wuthering Waves automation based on ok-ww (AGPL-3.0)",

@@ -87,3 +87,14 @@ ok-kit-icons/
 tools/_*
 *.log
 _min.txt
+
+# 上游同步工具产生的本地文件（upstream.lock.json 本身要保留）
+upstream_backups/
+upstream_pending/
+requirements.upstream.txt
+.venv*/
+
+# 启动/同步脚本（上面的 *.bat 规则会忽略它们）
+!start.bat
+!检查核心更新.bat
+!更新核心代码.bat

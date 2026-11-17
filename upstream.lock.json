@@ -1,0 +1,2149 @@
+{
+  "excluded": [
+    "src/gui/CharacterCodeTab.py"
+  ],
+  "files": {
+    "assets/coco_annotations.json": {
+      "local_sha256": "664df559d0856be736c4a8185a35f9915f3d35478512241bea4bb263b210b488",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3fbec3a3036a4cd7d05483e9b919641edda2d700"
+    },
+    "assets/echo_model/echo.onnx": {
+      "local_sha256": "59dd2e9edcefd128baee4839967d830b5c053a79af7a759f0b6b34e0b063e6b5",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9b076c7026dbba4a12fe212f89a1bf7784abb591"
+    },
+    "assets/templates/Augusta_3840x2160_3554_464.png": {
+      "local_sha256": "f90a6d377d4e356e4dead051c8119bbe9cf4956fd62cb8b2460cd417a7e1ed77",
+      "synced_from": "f497bd84",
+      "upstream_blob": "cd96cea01dd0d49d07be30521bcc33f136ce6843"
+    },
+    "assets/templates/Augusta_jump_attack_3840x2160_2826_1890.png": {
+      "local_sha256": "c031f76d4d4af889fb0a1801273ffd82fced030803bc0355472e67496aa93c39",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c091298842da6920de06f2d4e689e39102e6b373"
+    },
+    "assets/templates/Augusta_lib1_3840x2160_3585_1890.png": {
+      "local_sha256": "6f952a1df6620884051ef891d6699fa4c556e677281a36b1372dbcfe55434b8c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d01a9645b15b59601c50a4e2adec7764b232c4ce"
+    },
+    "assets/templates/Augusta_lib2_3840x2160_3585_1890.png": {
+      "local_sha256": "1b2ff424b0f0e95e73e312094c6a357803fad798ad970aa0089eb25afaa46ee3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6e8491249066d91431009bd4a3c07fd5aa39dc37"
+    },
+    "assets/templates/a_garden_back_1920x1080_1067_860.png": {
+      "local_sha256": "e22d3c6c99b44446a4992218a285d75d228158735bd8a663e841ab9efbe1f18c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "146b73098641a6ff6f84f002abe51f551df437e8"
+    },
+    "assets/templates/a_garden_restart_1920x1080_772_863.png": {
+      "local_sha256": "e506bf36f5ea84c673195d1d651328b51a1bb2b1bb94d286ef708f040a8298ac",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4660ba574cc4d0f65633ab7ba7829ca828bfd83c"
+    },
+    "assets/templates/absorb_en_US_3840x2160_2680_1081.png": {
+      "local_sha256": "2329d5870d03f4316eb65ec3c57ccf9af63e5e0279eeb67aee825e1818869e8d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fdf158a23ab8a5f9129bc7ccac202f07cdd4bebf"
+    },
+    "assets/templates/absorb_zh_CN_3840x2160_2681_1080.png": {
+      "local_sha256": "a22ac9101e81bb49577c8df9950c817a37ca046aa9cb41abd99d35113c4619ba",
+      "synced_from": "f497bd84",
+      "upstream_blob": "956ffa67d18df9823d02b369d9d7ae1c67c5904c"
+    },
+    "assets/templates/abyss_start_marker_3840x2160_1912_994.png": {
+      "local_sha256": "fbf6763007b2671c8ad88931d0a7d1adffa9c1210494623ab9db9ce45df01b9a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f8cfe4cf1d62bdbd6518d8bdd8f7bbcacf46d7ba"
+    },
+    "assets/templates/abyss_tower_start_marker_3840x2160_1900_1062.png": {
+      "local_sha256": "0940d9d2badebba93b59cb28d98e9a761a0d1247cdf92a2880749a4a552272f0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4460f8f9286b3d9d5116cffda5d6077c7bc9f5a6"
+    },
+    "assets/templates/account_close_2048x1152_1307_359.png": {
+      "local_sha256": "0ab02e5659019fba9e657067496d7acc379305f1d8f1232aa4e8e26f41c1d2f4",
+      "synced_from": "f497bd84",
+      "upstream_blob": "93cee28d790c3a31160abaa2b2e427ac843e4a51"
+    },
+    "assets/templates/account_drop_down_2048x1152_1273_496.png": {
+      "local_sha256": "d4f1e7621128552dd14fcec87e9d4aae55a4b2b5c5f01641b533918ff2a8f6b2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a67f991c91ab350b12da11284585907aae44c3dc"
+    },
+    "assets/templates/aemeath_e1_3840x2160_3187_1879.png": {
+      "local_sha256": "9f8c25b76792a9ff48454cd18fb93cd901112923f3696badc9b710153c82ff4c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7deaa2f2f7a9f240890074911f7885f36b951cc5"
+    },
+    "assets/templates/aemeath_e2_3840x2160_3199_1884.png": {
+      "local_sha256": "eb5e1f3e099af74b3850361c590621d6d8e5495bf556eb5aeb69ecafadde6625",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2177f56a9e4bda1739a37bc547939be5ceeb7b64"
+    },
+    "assets/templates/aemeath_human_heavy_3840x2160_2818_1881.png": {
+      "local_sha256": "c064fe3326fc6679851842438fdabd066f8321fe85839b1029c79a1fa9921276",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7386656459ef8f83f59da9d2592e8f028e383785"
+    },
+    "assets/templates/aemeath_lib2_1920x1080_1795_945.png": {
+      "local_sha256": "fb3b68959341e2730509c08e2ff8f5a4bbbde992fde95c4aa8f9633513e2764e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b524fbc54ae789da1b8e79064825235f2597435a"
+    },
+    "assets/templates/arrow_3840x2160_200_188.png": {
+      "local_sha256": "643b69bf6466f4f289a00ee4e8bc7d4036d01cdd3b2bc763e48e525a8a9535fd",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6b130ec3d8c614fa0d0a8d065b1c20fbd17c159b"
+    },
+    "assets/templates/big_map_diamond_3840x2160_1878_1046.png": {
+      "local_sha256": "fde58f31e81594d11d20cf34f37998dbd0623b72c5f5eb91c11690d9f7252a09",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1b885be1c78497e75eb3cb07304f8fc48b92f4f8"
+    },
+    "assets/templates/big_map_skull_3840x2160_1916_901.png": {
+      "local_sha256": "7f098c4826572af46a4aef86a8140b2330bcd35c933273c7d92b2634be718fda",
+      "synced_from": "f497bd84",
+      "upstream_blob": "cefcf9ea4eee9dca30fafc70924967f34f1cc247"
+    },
+    "assets/templates/big_map_star_3840x2160_764_1022.png": {
+      "local_sha256": "305fc707826bdffed928679ea7e08fee4779a0f3b21e930aabc00a8cbd9021ce",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8e4b725a2091fa8545301935fc853661b30c0c42"
+    },
+    "assets/templates/book_wuyin_1920x1080_209_493.png": {
+      "local_sha256": "fae2f85221a6bd9d4badb6cb7e8fa85b5cc02abfcdd9e9da9d7fb7c00802ebeb",
+      "synced_from": "f497bd84",
+      "upstream_blob": "11056752c0d97144e89192b949a3e12c34f7ef36"
+    },
+    "assets/templates/boss_break_lock_3840x2160_1203_95.png": {
+      "local_sha256": "69d6011fc6801c210e838cdd0ed765db41a64e54511f91dafc9c61eea975a56a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "65359e147b412ef85d10ce29c857bf45a3d749fc"
+    },
+    "assets/templates/boss_break_shield_3840x2160_1203_95.png": {
+      "local_sha256": "b526957856bb6e15f4c08daf818365118ab258c72055465e021d5ad90fb055f8",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5c2d60b291f50f9895b50d4310ef5e27b5b42e0e"
+    },
+    "assets/templates/boss_check_mark_3840x2160_925_809.png": {
+      "local_sha256": "166b1af3a7c34bd4a0d405b47113e49d1b1def18bbc8e72b1d877f704bd61157",
+      "synced_from": "f497bd84",
+      "upstream_blob": "634ce47e8b7d5b56feb1734f1077de583b813acf"
+    },
+    "assets/templates/boss_check_mark_minimap_3840x2160_365_169.png": {
+      "local_sha256": "ed66f92c6db8b6275f6c1fed7173e72fc677f27328ca2b7ee25116ddc881bfb9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "24247a70b861f86127dcdce2d1b5abc7b91935a1"
+    },
+    "assets/templates/boss_no_check_mark_3840x2160_1591_583.png": {
+      "local_sha256": "440e95d5598933824451ecf041ee7461794e8913fbc4907327dae2d14cc70605",
+      "synced_from": "f497bd84",
+      "upstream_blob": "15579f0c9ed8d087988793fc4f3f5e2cd1359a4e"
+    },
+    "assets/templates/boss_proceed_1920x1080_1781_404.png": {
+      "local_sha256": "89bfb006a77937a05b579302bd08b784617c6feef4ad40e568a542e649af7649",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1bec16217052728bea1133219be734026f165486"
+    },
+    "assets/templates/box_arrow_3840x2160_178_152.png": {
+      "local_sha256": "5d9e864776c8390ddff820c4879875835f422eaa520703a240f16cd1e77f781b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d9dd0442ccbe714a02e0751c50885da70b80140f"
+    },
+    "assets/templates/box_char1_switch_wave_3840x2160_3346_480.png": {
+      "local_sha256": "9b510688a0a19d5b61440bd6a1be2d7396df4376763abc87aaf9704baad1095e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c2cf0d5b58ee167050ea4cf92a94e3e09895683d"
+    },
+    "assets/templates/box_char2_switch_wave_3840x2160_3347_740.png": {
+      "local_sha256": "9b510688a0a19d5b61440bd6a1be2d7396df4376763abc87aaf9704baad1095e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c2cf0d5b58ee167050ea4cf92a94e3e09895683d"
+    },
+    "assets/templates/box_char3_switch_wave_3840x2160_3348_994.png": {
+      "local_sha256": "9b510688a0a19d5b61440bd6a1be2d7396df4376763abc87aaf9704baad1095e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c2cf0d5b58ee167050ea4cf92a94e3e09895683d"
+    },
+    "assets/templates/box_char_1_3840x2160_3515_418.png": {
+      "local_sha256": "836bfacd0f2be7e10d7f3709df09d9bae9b85e1505e71d003f0447d64f85ed82",
+      "synced_from": "f497bd84",
+      "upstream_blob": "33b89bc30be20b491c7f45316312afdf17e2549a"
+    },
+    "assets/templates/box_char_2_3840x2160_3515_686.png": {
+      "local_sha256": "f1bbe43c24c8aeb5b5e4055f1842e19fd9f4b65d709a753e3dcdc58aa2662097",
+      "synced_from": "f497bd84",
+      "upstream_blob": "32eb35ece7750d561aa98cdb3504be1a372203ec"
+    },
+    "assets/templates/box_char_3_3840x2160_3516_954.png": {
+      "local_sha256": "cb40c661b59a26e6c5ecd8962816972290d4c3fb7615b99cce967896446ee00b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fd4a2277521f635ec92bd64fa722cc91d813bc5b"
+    },
+    "assets/templates/box_concerto_last_dot_3840x2160_2169_1996.png": {
+      "local_sha256": "52a03e6a198829985357f55cf30f30f8494c4e0d51c8d141cca81bd18df1d498",
+      "synced_from": "f497bd84",
+      "upstream_blob": "96cf42b558512a5d30e2272ddeec8643e7865c61"
+    },
+    "assets/templates/box_echo_3840x2160_3371_1877.png": {
+      "local_sha256": "663f1ba25db8d404c89d4b8389961a8c6d4338dbc48c1644282a25b97c597d59",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8cc3cbe3942b3906af3b55a9c610565b17d15f4b"
+    },
+    "assets/templates/box_extra_action_3840x2160_2586_1846.png": {
+      "local_sha256": "85844d073eae279cb3c6e7a8a5f4b66d53b4b9ee538fab9bfe6e9142e406295b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8367b4accf3dde330574df2992865406c00246a7"
+    },
+    "assets/templates/box_forte_1_3840x2160_1693_1993.png": {
+      "local_sha256": "1e36ff45d5d98596e8682d8e8081726840109f29ccef8829ef58a7863381df52",
+      "synced_from": "f497bd84",
+      "upstream_blob": "28c2e3e56b1942cc6cf31ea696c36afa96c33637"
+    },
+    "assets/templates/box_forte_2_3840x2160_1888_1991.png": {
+      "local_sha256": "c0cde614505aec665fb05d93698ab831ac9fd0995f944f533629da703c8939b7",
+      "synced_from": "f497bd84",
+      "upstream_blob": "937580ac000179dfed9f32da738b924fcb8fed60"
+    },
+    "assets/templates/box_forte_3_3840x2160_2072_1991.png": {
+      "local_sha256": "a968208fff38f6344c263d4f25dcc15417f89b1aa28c32398b30397cad1f85da",
+      "synced_from": "f497bd84",
+      "upstream_blob": "73105c1f871d9f4ba0348bbc8fe6b3109ca9af96"
+    },
+    "assets/templates/box_gray_book_1920x1080_14_115.png": {
+      "local_sha256": "4f7102fee4e03528e9cbcef0d04f57d0062a0aa579a51cb5d4433fc839105cb5",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fc27eda2e9629cb241add8d0617a74852d7babc5"
+    },
+    "assets/templates/box_liberation_3840x2160_3572_1877.png": {
+      "local_sha256": "c30dd3134bb919942baece7e36700ce88edf3a8e6719a892fa4df210d350eb9c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d2c30e2a0948b3de2f18c13496b0d421057667f6"
+    },
+    "assets/templates/box_luhesi_lib_3840x2160_3584_1887.png": {
+      "local_sha256": "08696699a15d9849ba05ad3b7bba6ff8651a5edb1f57cbb8026379440bc518cb",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f74f81fd489399248abb5e5e7e9480c6f9bad4b7"
+    },
+    "assets/templates/box_minimap_3840x2160_72_57.png": {
+      "local_sha256": "b4fe4a84a78b8e8abb720ce42f0c08d4f51d3b183635ba41a34ed0bdc87cbf9e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "303cf480cf9079a4e604684e20f9068a5aae2776"
+    },
+    "assets/templates/box_resonance_3840x2160_3185_1877.png": {
+      "local_sha256": "62717e27b527c6b3d48b84f70716af3bcca4b3a049854aefb28a6c08ccd5af8f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "75dea6ed183af5a51d95c09491b4ffd98463bbfa"
+    },
+    "assets/templates/box_target_enemy_3840x2160_2867_1913.png": {
+      "local_sha256": "9d8cd465b2896d5e9452f664a56e959173310172cdded02595e91e43d963ce37",
+      "synced_from": "f497bd84",
+      "upstream_blob": "95e6365b3f8c865e5dbcc9432895d4e98105bcb7"
+    },
+    "assets/templates/box_target_enemy_inner_3840x2160_2884_1936.png": {
+      "local_sha256": "ff3e4a13b8ea6a67edbc51db5a992986ddd53b7c34cdf7d062e6626197860a74",
+      "synced_from": "f497bd84",
+      "upstream_blob": "76197a7273492c067012b62723d192cfe2164b8b"
+    },
+    "assets/templates/box_target_enemy_long_3840x2160_2668_1900.png": {
+      "local_sha256": "670d14217d6b0b4a1c3ac2fad83dcf219616bca9a7c4aa5d74c0eca018e0a3f1",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3a07daa06c08d7dbbfd455802848bee65e86bb87"
+    },
+    "assets/templates/box_target_mouse_3840x2160_2876_1985.png": {
+      "local_sha256": "e1932fec86820701c020ad6d229672b3dadf8ababc40e3078da6c2b3cd64802d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3494c68ebe9b14162d90b2fa6542f7c3a35cf3d6"
+    },
+    "assets/templates/btn_auto_play_dialog_3840x2160_3381_107.png": {
+      "local_sha256": "197334ca00b2a9eb7c55e827f0d311d21dbd99b99e5ebec3b842707c9ab043f4",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a55b87ea6cd4453322e514946ddfd89211bb57c1"
+    },
+    "assets/templates/btn_dialog_3dots_3840x2160_2523_1221.png": {
+      "local_sha256": "950b0fbab6527b5e7fe3fe7c9a6a54c4ef6e0e9abe88143970e46d4ca8ba558e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c894a575a987a4f3d9bc9bf83f030c2a206c2530"
+    },
+    "assets/templates/btn_dialog_arrow_3840x2160_2525_1384.png": {
+      "local_sha256": "e2f0c55badd796f63a25f0264edfba24ab4a15ae7e5eac4d6d7e928713ce8433",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3a0c648174b5e9db9ba19421f6821d46d802e88c"
+    },
+    "assets/templates/btn_dialog_close_3840x2160_3560_65.png": {
+      "local_sha256": "259615621acb45ac00750ae13a82550f2774e528493b76430d87ec5ca123a33b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "28d2e49ef5057d29dc0c3f98270948f6137b360e"
+    },
+    "assets/templates/btn_dialog_eye_3840x2160_3565_111.png": {
+      "local_sha256": "ce72c2a8a9b354de48d2a1d75591fc81b4b6e7300d59d11ce1820d77d646ec8b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8907c0b5d63c69aa578ad5cb8ddff019db199fa7"
+    },
+    "assets/templates/camellya_budding_3840x2160_1589_1997.png": {
+      "local_sha256": "8d87fe2917e0a3e7a370006f7a22a4d0d77df2b1be8029173922b7afaa12f987",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ece361157a39f08c2cc74e3e1906e490c3ad53d3"
+    },
+    "assets/templates/cancel_button_hcenter_vcenter_1920x1080_455_644.png": {
+      "local_sha256": "11b5baf067af1e20d323d6156551a50d2ed230261d5bbfc822681c47f7d5143c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ab7da913e8f4103091546d4061e084bdfd2170e9"
+    },
+    "assets/templates/cancel_button_highlight_hcenter_vcenter_3840x2160_914_1255.png": {
+      "local_sha256": "d2cc5e7a0aad94bcdd2eb7bd34bb65ce067804efda354a088e78febad61a2084",
+      "synced_from": "f497bd84",
+      "upstream_blob": "407b117060e315e9968f14eee232966a59a40cf1"
+    },
+    "assets/templates/chang_changli_3840x2160_3537_723.png": {
+      "local_sha256": "b41669818f7f48522f5fb47e3a3486f485e8b23ec552c37ae6aaf3acc299c84d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2437913eacd5d1c6f578467fc2c47580ac55b6d2"
+    },
+    "assets/templates/char_1_lib_check_mark_3840x2160_3650_474.png": {
+      "local_sha256": "9d7ac5e51f2f6ba0ce5e8387f8538ce5e3c7a704c6f2b11da7044eaa97bc6790",
+      "synced_from": "f497bd84",
+      "upstream_blob": "59bd438c44e47e51a6add9447ea6dbec22f0ffe6"
+    },
+    "assets/templates/char_1_text_1920x1080_1738_214.png": {
+      "local_sha256": "85276a6c24269541668b6c0aaa3d45caca9ea8d4f4e77736cceef4f920ecdd6a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6e89719dd955cf442e58597c2ab9a77cdb3b9b64"
+    },
+    "assets/templates/char_2_lib_check_mark_3840x2160_3649_739.png": {
+      "local_sha256": "58197bdbc755e827c13d2991b66570652f4fbf055c6541bc3244dcd7ad47f74b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "36bf7bd1d48a3853458a61781f02804772b1f79c"
+    },
+    "assets/templates/char_2_text_1920x1080_1738_345.png": {
+      "local_sha256": "81914251b72eca0a59b7a15e697d726e705eb08cf4202f5e1164c7b1e9c0451b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a77575b3a7f963cef0fa387eecbd06baf0218578"
+    },
+    "assets/templates/char_3_lib_check_mark_3840x2160_3649_1005.png": {
+      "local_sha256": "ae2157971be296f1b2f90efcd171827238460c969ac76d45a1f792e9e7cd0719",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7749d76a876b94c999f8d5230dab28b822cf4caa"
+    },
+    "assets/templates/char_3_text_1920x1080_1737_477.png": {
+      "local_sha256": "26161dd19205bbafc917c3a82bec65eab61153b6de6a33f376b9b0db9988c4f5",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0ad086e959ea21af69669790f8184ebb8717f6cf"
+    },
+    "assets/templates/char_4_text_3840x2160_3476_1219.png": {
+      "local_sha256": "2df6e4a3707a639f1f5630c3bd189861a8d01977518f31aec53eb4e58ea3f9ea",
+      "synced_from": "f497bd84",
+      "upstream_blob": "33ab3399a245b0b8bbbcc5bd681253dcd9417dce"
+    },
+    "assets/templates/char_aalto_1920x1080_1770_224.png": {
+      "local_sha256": "31a94b9812ac8c07a3d386f0932bc62f267c57be46e363408b7804f03d2e1e34",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e367b77d68cc9934e6ce7f344cefb2de5aa3b260"
+    },
+    "assets/templates/char_aemeath_3840x2160_3545_986.png": {
+      "local_sha256": "187b81668f4aa5a7ad6c1d148db421d2f5cf3b3019811457b9fc6a3c76bb423a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "cea9e1b4b8cceca3d5f262514582673513f1e7d6"
+    },
+    "assets/templates/char_baizhi_3840x2160_3557_991.png": {
+      "local_sha256": "3ef0a3fe5eb240c49acab45e6ebe8014da1a056965cf7aa3fd3bee3ce296e4cf",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bd94e60136cf36723b4e7984df22944c4c5a54c7"
+    },
+    "assets/templates/char_brant_3840x2160_3540_454.png": {
+      "local_sha256": "5db5a039dcb69b1fbe2d6a048c587c2a71cf1ee34e84b2ce96ce0e1d6deabb39",
+      "synced_from": "f497bd84",
+      "upstream_blob": "02ade14b8805e40b880b2f9a6452b90e6c0bac7d"
+    },
+    "assets/templates/char_calcharo_3840x2160_3550_733.png": {
+      "local_sha256": "56f9b5b0d52ae3a6bccdcb7e3e578998d55e52275ca6d87b4350aba6b97bdd32",
+      "synced_from": "f497bd84",
+      "upstream_blob": "903d122569bf9c578f790065cdd89d35bb3076e5"
+    },
+    "assets/templates/char_camellya_3840x2160_3546_449.png": {
+      "local_sha256": "0cf251e19b02ecea1e8d1e5960d0b31419ac97d4f0385c23c247904a78687573",
+      "synced_from": "f497bd84",
+      "upstream_blob": "851630f01e8f5e9802459d00ea8020bfb4cfcd53"
+    },
+    "assets/templates/char_cantarella_3840x2160_3545_460.png": {
+      "local_sha256": "7d7b8d0df69f57b444f217b7140a96b963dac993c79e9f556e21c23d08356a01",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b2af9b2fa4fad3e74813b60adfbc8475d4169a44"
+    },
+    "assets/templates/char_carlotta2_3840x2160_3550_465.png": {
+      "local_sha256": "1303a85312d9bfe5cbf9fb4c74790d11312c52a4aa571f4cd40cc3f13c14a954",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2d05e78afeafb312879eb37bce35cdf868001a74"
+    },
+    "assets/templates/char_carlotta_3840x2160_3551_464.png": {
+      "local_sha256": "44b8c25b4b19e038700fb219e13c30b92594b46a4881053017cfb1a0d8b00ab1",
+      "synced_from": "f497bd84",
+      "upstream_blob": "26414fe53b90558dfff6e87b568d591c26efb652"
+    },
+    "assets/templates/char_cartethyia_3840x2160_3547_465.png": {
+      "local_sha256": "9e4a1f0e7291b08fa7261d12294b046dd1245518bc2dc4fc1bf9faa8f444df20",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f0f6db421b127a7ba376fc245d78b608898288d1"
+    },
+    "assets/templates/char_changli2_3840x2160_3539_455.png": {
+      "local_sha256": "fe11df7a06c74bd594d7ac2a044253a79513c991f6b651f5b3b6f4f7b679e641",
+      "synced_from": "f497bd84",
+      "upstream_blob": "63e2034439928b153a9b930dc852d612bf903d0d"
+    },
+    "assets/templates/char_chisa2_1920x1080_1776_227.png": {
+      "local_sha256": "e154143896ad3de97643e64f60ccf0864f128305c60dd10a6c33099e9af3b51a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4d7121c4b048edf6a9cbcc237079a6bd6684cb29"
+    },
+    "assets/templates/char_chisa_3840x2160_3550_457.png": {
+      "local_sha256": "a0820e23edc82cbb26ffbe83e0e484a223b5ecbcb413a42a5437fb0164377793",
+      "synced_from": "f497bd84",
+      "upstream_blob": "dfd9d7b69d974e1e0cd75d464e920e24884b4db7"
+    },
+    "assets/templates/char_chixia_3840x2160_3545_983.png": {
+      "local_sha256": "2556614b33f729461cb379863114f526b05830c0fbcaa08ab71e379d8c38a784",
+      "synced_from": "f497bd84",
+      "upstream_blob": "76545afea0ad1be54c50533a281fd153ec9015f7"
+    },
+    "assets/templates/char_chouyuan_3840x2160_3538_439.png": {
+      "local_sha256": "dbdbb76a65bdeaeee0b6c4dc7576ddd794824cb4822d89028c96802f05a8db41",
+      "synced_from": "f497bd84",
+      "upstream_blob": "23e46e446848340d09669e1a2d148ccccdcce696"
+    },
+    "assets/templates/char_ciaccona_3840x2160_3543_452.png": {
+      "local_sha256": "6949f3206aba3736737876a0dc0472eff96a06299065492c69d6c557686ad99c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "73de6f8b2df9ab195f29b6ed308ad5ae81397570"
+    },
+    "assets/templates/char_danjin_3840x2160_3541_464.png": {
+      "local_sha256": "470d599150a6451cb82b94f84c060a28d3c7641bc24e771f8ad5fb98d077e468",
+      "synced_from": "f497bd84",
+      "upstream_blob": "590551f9765a93a74cf1b2c14fc10e085854847c"
+    },
+    "assets/templates/char_denia_1920x1080_1771_232.png": {
+      "local_sha256": "eee9fe2a9270d1b89c204db322fbcc5da219ca04a96421ec80b79b401581b5b9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7ca75cf45bb09ecae17ca39cdc3dc9d03f49e50b"
+    },
+    "assets/templates/char_douling_3840x2160_3550_460.png": {
+      "local_sha256": "9a8ad14798c0a23373e095105347ac961a256b6f02dd95df9279ffae344debae",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bd2b5a280dcf305e2fa442a5e6724b89a320b403"
+    },
+    "assets/templates/char_encore_3840x2160_3541_477.png": {
+      "local_sha256": "12bdd4eaf0f5a6151bc4177f970bec4770fb40a7a5033ebd835dbb51ae9803ef",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1fe90d93b5fb626be1a4421d1755bfee519987c1"
+    },
+    "assets/templates/char_galbrena_3840x2160_3537_439.png": {
+      "local_sha256": "ef1a1fd165c13bc9379cf1a821441e937307db6b66fa31d5581d35d5a96725d2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c8a622063201b6f7d77973fca8567a63494fddfd"
+    },
+    "assets/templates/char_hiyuki2_3840x2160_3558_482.png": {
+      "local_sha256": "120a00d0a3965098aebb2658156d848f8f8f804978f399bee768152a2190b855",
+      "synced_from": "d0a59291",
+      "upstream_blob": "b5029a4cba6543596206e17640d2815c3306da09"
+    },
+    "assets/templates/char_hiyuki_3840x2160_3554_463.png": {
+      "local_sha256": "43bf638473ccbe3741cb4402e72d345c9faf416bd6024f482fdd4d90c1aba521",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2b2952e6d24bbf1ccd2e4e34810f46dac82b68ae"
+    },
+    "assets/templates/char_hsin_3840x2160_3552_442.png": {
+      "local_sha256": "6e7a4f5c2c2a59961492881056645628e26ea3b53ad4d78414f5f84492465cb9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3227eb71f375094a1e23234378491aed30ff6459"
+    },
+    "assets/templates/char_iuno_3840x2160_3547_454.png": {
+      "local_sha256": "6a84846c2f08d3cce2b8139a31157760b38162355b465f7162be8b5a6fdf8ba3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5e704dc052cbeb219030fd16e26424dc98f67d08"
+    },
+    "assets/templates/char_jianxin_3840x2160_3554_734.png": {
+      "local_sha256": "8e26d548ce6a4c86a55f9bb9bf866aed88c8059a3b786a68e76fd6c98a6e3d29",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6c26ea012a91a953c64db8ca52fde0615ce2a27b"
+    },
+    "assets/templates/char_jingran_3840x2160_3542_464.png": {
+      "local_sha256": "91d8f8cfc48b1e0de6e2bcd9f99b78154b72311dbdb540f0aa55eb5ba6bf8ada",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bfb2ca425a0862d3b22d51b53884de05481c3ff6"
+    },
+    "assets/templates/char_jinhsi2_3840x2160_3541_454.png": {
+      "local_sha256": "7a743c98d7f26ce8478ab2608c1b569fda66c52401fcc86ee585e9e573ffefaa",
+      "synced_from": "f497bd84",
+      "upstream_blob": "19da282e4c74a5e1cb977a9f43e21106260840ea"
+    },
+    "assets/templates/char_jinhsi_3840x2160_3543_733.png": {
+      "local_sha256": "7fdba5c98c8feb65f486acfd40ee0a9db20187ba0416d142c9332ed8ff382f2d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0fa047ddc2cbe9471c0a66a86b9a10357b119652"
+    },
+    "assets/templates/char_jiyan_3840x2160_3538_456.png": {
+      "local_sha256": "6ca62be32ee33322a80289362c85c283bd3cff7d0f70953a3c710cdb5480b67b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "08ea1294b2031cb2a2ac4fbbe193503bda4d4922"
+    },
+    "assets/templates/char_lily_3840x2160_3560_476.png": {
+      "local_sha256": "5fff1ca7f5c0058e897df974cdfb8c0f07288ece02d428beab1aee543d24b97f",
+      "synced_from": "d0a59291",
+      "upstream_blob": "ad0d311406d280b4d194b554e4356d852b9c45db"
+    },
+    "assets/templates/char_lingyang_2560x1440_2355_304.png": {
+      "local_sha256": "0f3b362b4006294e2888e6305f7896b68d249dd033572817450f622a033111fd",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1aaae1e0193c4681018ac50807e44d76bc732890"
+    },
+    "assets/templates/char_linnai2_1920x1080_1774_221.png": {
+      "local_sha256": "7623e37c12c383ca560c39419a07e72618bd6892ddbb6c1577af35866661c71f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4364adb18ed72892f88f2c9410e94364c9eedbc0"
+    },
+    "assets/templates/char_linnai_3840x2160_3547_441.png": {
+      "local_sha256": "c60524fb1fe8015e1ba22696e7f29ae27dad25ca66a2eb466ede61e0e7eb5a23",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8743f355f00f42d155f5d5deaf1105a26bdb4f1f"
+    },
+    "assets/templates/char_lucilla_1920x1080_1779_229.png": {
+      "local_sha256": "732e1ac53369e4a9b29c999d068c674073ff9be1d92d03ae4827760ef2d1e56e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5d7fcef8fd51f06a47b2f118c1c067caa55209ae"
+    },
+    "assets/templates/char_lucy_1920x1080_1783_226.png": {
+      "local_sha256": "343a8d5ce0c1ed34d608ead720826af6409d5963683b5b3b901bd54f4736451a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "90cab8ea949a2b1a213b0a1c21977276e8832e18"
+    },
+    "assets/templates/char_luhesi_3840x2160_3554_441.png": {
+      "local_sha256": "7cc1b2815bd58940ff83bbe9dc8baa9949a10ecb8ac1b5c1fcd690c3982931b3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "094045e4253b6cbeb9a1a05543f54c4f03311782"
+    },
+    "assets/templates/char_lumi_1920x1080_1767_357.png": {
+      "local_sha256": "764e93038657adff5506e19d1acaef15cf83f411f988aba6bd74bd8e29fe4e66",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bceaffdcbb0a37428907addf3dbdc322b559ebf9"
+    },
+    "assets/templates/char_lupa_3840x2160_3547_450.png": {
+      "local_sha256": "73d45555f4df394d4786d19037755536c364acc01f5841edcb8becc1efdf8951",
+      "synced_from": "f497bd84",
+      "upstream_blob": "130c9fbda8d1f091305a51047d9749045c531061"
+    },
+    "assets/templates/char_moning_3840x2160_3555_447.png": {
+      "local_sha256": "3f3c99df7e34bfb3f0f00ee78cfadcf690070b5ee6dd9d7c3dfa81b88c8b308d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "368852ab9d2f8345857f8b8f494834e8f44f11c8"
+    },
+    "assets/templates/char_moning_new_1920x1080_1775_482.png": {
+      "local_sha256": "1adbce88d5c800ffb7fd3219eb4afb7b089c3f70e57afc529923eacdba0da745",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a7d80003bb6345b8c172148fe91e714608679033"
+    },
+    "assets/templates/char_mortefi_3840x2160_3550_716.png": {
+      "local_sha256": "b22ce27d713d3c4d95bb3cbf984c35f456d56ff99f7da142611fa36b3cfe2a1d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4071a6c801ba8dfa6667157530d45afbf8cf79d9"
+    },
+    "assets/templates/char_phoebe_3840x2160_3543_473.png": {
+      "local_sha256": "a1491072e02aed23c206f67e68246ddb3634697d013f4db7c044d37b4555842c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d615098e783827ce7f8e61739cb13d8b14e75b75"
+    },
+    "assets/templates/char_phrolova_3840x2160_3547_459.png": {
+      "local_sha256": "cfc1f4624a764157c89e58aed8c12c01c5554350842c9b29541d165777902e18",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e9b699b6c67f5afb342a6c87777a4dfdee9bb5a3"
+    },
+    "assets/templates/char_qingxiao_3840x2160_3554_454.png": {
+      "local_sha256": "4c2c8eb4ce7d2b5a52b5c52d3d93e5b44f0b225cfa6e21a6cd68d0daeb0be05b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "44bf9077b1cd0190b9cb14d39040101c76c30b69"
+    },
+    "assets/templates/char_rebecca_1920x1080_1776_365.png": {
+      "local_sha256": "465239f620871e7065cd8816b051532c12bd3fdd8f0cc9e59554d02534fb3bf7",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a54b7ef5cc2c5622eb056dee2ed3210b51137368"
+    },
+    "assets/templates/char_roccia_3840x2160_3549_991.png": {
+      "local_sha256": "38b2ac1632a9cca7412c59f95d59676f1fa71aca35c7ef1fd4f0da6a7487c644",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f962f58c604c1fde89694e2d467526044fdd8c95"
+    },
+    "assets/templates/char_rover_3840x2160_3541_991.png": {
+      "local_sha256": "a4634f44322e832c9f829f8a143f8d6dc0583bb5a0a4dda4b67e323b48918c15",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c6f036146f84d390d68f1b35df1096b9adb86735"
+    },
+    "assets/templates/char_rover_male_3840x2160_3552_979.png": {
+      "local_sha256": "293230d3e109188035828d9b1c36a9a7b8070e2be8e4d52955c8e99e691b8f5e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6bbc00e7da089cace7362e6c2a2fea85fdd8d677"
+    },
+    "assets/templates/char_sanhua2_3840x2160_3535_986.png": {
+      "local_sha256": "5208d06aeb2ad8c8f18ffa381d77d9709af38ca7b206e393f4ec44f64b6a2fef",
+      "synced_from": "f497bd84",
+      "upstream_blob": "77046bdc901acade801e10fb5b87e8b6b6c52109"
+    },
+    "assets/templates/char_sanhua_3840x2160_3534_1004.png": {
+      "local_sha256": "71b05cf241b7e1e0b4d916e36ffca6c7617ed73bb4bfa00aa2b36ec47702b478",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e2232195d0d70757f4d205285d745630823ab8cb"
+    },
+    "assets/templates/char_shorekeeper_3840x2160_3543_991.png": {
+      "local_sha256": "db0a3675e74abf2a8a652f1df75e6fc292349dc5bc319d2dcb3b12cbf7ee07fd",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fca5a139d784c3119eef1e10c79620416b87dda0"
+    },
+    "assets/templates/char_suisui_1920x1080_1773_231.png": {
+      "local_sha256": "62286f74e35b00f4f5d6bd200390d513b8cdba7c5a82c2d3b846a289a30f5a3b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "be47878214e850ceac28cd7138c8b00798155521"
+    },
+    "assets/templates/char_suoming_3840x2160_3534_450.png": {
+      "local_sha256": "891b93d0d7c0ca59ff2591b8f94125f84fa8dd54ae1bc1f9009067aba8cc791c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a7f90c7a53f17370abed8197b7636353c8133cdf"
+    },
+    "assets/templates/char_taoqi_3840x2160_3541_977.png": {
+      "local_sha256": "dda96b90e161f215efa151e89b515eb40222334d219b96e5b3375ad783ecc1f9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "84683f37096028eebbf891d025667f1ff0198c68"
+    },
+    "assets/templates/char_verina_3840x2160_3534_745.png": {
+      "local_sha256": "c2e0f98b3aa1fe6476ce43ed25c3e6541dae3bb1db7a5cb884f5a8a140951e84",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f8fa029b69117dc33e27015b1649829dbc2419ed"
+    },
+    "assets/templates/char_xiangliyao_3840x2160_3548_453.png": {
+      "local_sha256": "7fa03ea4fc3d554608a5c1b919b141039e99fcade653fff32b1b56e4087a8c2d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0f52ab1c899bfd81d63caaac353fc017d3825fda"
+    },
+    "assets/templates/char_xigelika_3840x2160_3547_450.png": {
+      "local_sha256": "c01f8ad74910475ff659f0b72edfdf730874ec4f38012af52d786480cd13b225",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d46bb2f16f9aa42e4e10e7b1625e63f6f5d43d29"
+    },
+    "assets/templates/char_yangyang_1920x1080_1770_493.png": {
+      "local_sha256": "67e4462f7cfdcf3f6ad4182463e423c459730b8b57609b2388cc9b900fe8ffa4",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3beeed042fedd5393a441ab2911587b0c9ab89e1"
+    },
+    "assets/templates/char_yinlin_3840x2160_3541_485.png": {
+      "local_sha256": "310bd988d74e34ca6f7ac387476f48e4f1e50e1342f51e8026d96fef9a830470",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f34ce52d3f17742a25db3ec775e9106097953f41"
+    },
+    "assets/templates/char_youhu_3840x2160_3546_465.png": {
+      "local_sha256": "4e681c09d63867b54d8600013cf81ce3d5ec5fdd8450cc1b8d9d0cd644314a47",
+      "synced_from": "f497bd84",
+      "upstream_blob": "51dd20b6dc40f3853541d689e7f916daa0212d6e"
+    },
+    "assets/templates/char_yuanwu_3840x2160_3552_713.png": {
+      "local_sha256": "5b8ace991f7a8fa899973f5317944796c5fd25bcb513012855f81db19e08f2cd",
+      "synced_from": "f497bd84",
+      "upstream_blob": "41532f87cc14f2af1d8918ee8aa916ea0ba76405"
+    },
+    "assets/templates/char_zani2_3840x2160_3547_452.png": {
+      "local_sha256": "38d34569e7f9e05c432e06e8e036d505b7dbc1840bd3ed8fbf28e37218dd117a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4820dea5e6abbf6f23b041a2512221698d0a5f1e"
+    },
+    "assets/templates/char_zani_3840x2160_3549_462.png": {
+      "local_sha256": "3fcef660b0d677c06c0302d958940890f850c86523f98469a6e64813f6347c0d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8f3f7fa7e633712a2c5d7fb5ed28c2a4615aba0b"
+    },
+    "assets/templates/char_zhezhi_3840x2160_3542_723.png": {
+      "local_sha256": "59bc129606a955a208094cadf5c6a971355c2aa9589270f487168414259bc75e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ec74b8264feaca83d9949a29afd5f54ec0befbf9"
+    },
+    "assets/templates/chisa_e2_1920x1080_1600_945.png": {
+      "local_sha256": "fbc1082fc06c1e823cc3d6be15779a3a44429e3549fbf6433a0fbda9096a5fd5",
+      "synced_from": "f497bd84",
+      "upstream_blob": "37081aeb047817b1452efd48d36653ced92c6264"
+    },
+    "assets/templates/claim_cancel_button_hcenter_vcenter_1920x1080_454_623.png": {
+      "local_sha256": "a059411d7199d2ef780966a78e6f958e0c0350d855ce7a423919543517aae19b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fb4cb7cc5b25b402a7f3f51fd71050558faa347d"
+    },
+    "assets/templates/claim_stamina_sign_1920x1080_1284_324.png": {
+      "local_sha256": "8273e3a63e7693ad85f0bdac77afa9d12706b345a4aa9f230a1ecc482e43ec08",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4b83ca516c914d157c9cf8e87ef2a83a1df7ae65"
+    },
+    "assets/templates/con_electric_3840x2160_1465_1973.png": {
+      "local_sha256": "44e416a87bacf06da3a957532037325c4b147630caf1589b21c066fa33c66691",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2658e68d4d025674253cbead91b81ab89fc1ab3a"
+    },
+    "assets/templates/con_fire_3840x2160_1473_1977.png": {
+      "local_sha256": "27578084338d24e0da1740acac8f61772189b651bbfacf1e4b839014c6d67d1c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2a57f12e7600b677aec0af53fff7a94e5792ed94"
+    },
+    "assets/templates/con_full_electric_3840x2160_3654_788.png": {
+      "local_sha256": "90984a35b9fd5851d486765f54dd39a2f990cad111b95edf18edc8adaaf23559",
+      "synced_from": "f497bd84",
+      "upstream_blob": "40dafe910976de5c62f36953070b9b83e8066e30"
+    },
+    "assets/templates/con_full_fire_3840x2160_3654_788.png": {
+      "local_sha256": "e8cebf6af68a74e5e310305a35b65546d31c4501d479fe5dddfc0ea110d57788",
+      "synced_from": "f497bd84",
+      "upstream_blob": "85692fd6678cb2aff097b6883cd6ff6d5ad7cbbf"
+    },
+    "assets/templates/con_full_havoc_3840x2160_3652_1052.png": {
+      "local_sha256": "2b12e7c34bd8707df2592ef7d44ffbd48e81d0632039d907190440653078a7a9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b64503a672be6505e6f336df121712f0e8136d2f"
+    },
+    "assets/templates/con_full_ice_3840x2160_3653_789.png": {
+      "local_sha256": "32a5e4cc6549c1b6c85144da4318cefeb9ecb17d2aabc98d182cc3cc1f134131",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1f5500b47396eb26a195d7f0b6db4cf59c0444c2"
+    },
+    "assets/templates/con_full_spectro_3840x2160_3651_1054.png": {
+      "local_sha256": "19406863938e614cf9ca0deaf8fe980fdf2eedf181bcf251d3a5e9e5587db919",
+      "synced_from": "f497bd84",
+      "upstream_blob": "33bd14c479cad6b3aa96120fbc8c029f36be4b62"
+    },
+    "assets/templates/con_full_wind_3840x2160_3653_524.png": {
+      "local_sha256": "6c986ad1e454f8cb56e74c862b786114012d0d4d8ac344849cf214ba806de026",
+      "synced_from": "f497bd84",
+      "upstream_blob": "21ed048cd2e48cb55a34b63fde69002a510e4adc"
+    },
+    "assets/templates/con_havoc_3840x2160_1465_1978.png": {
+      "local_sha256": "dbf20e079b58e656a7ee39398faee71e6aabfbd17902a1505ec08ecd4b67eab2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "128ac8a0783c152eb899bc4f49405554ba868a56"
+    },
+    "assets/templates/con_ice_3840x2160_1465_1975.png": {
+      "local_sha256": "668829f6d66b07a0dfb95e3008f2dc90e648e086184be07b978608f6c8f5d270",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9bf80b41dc1ac00fdfb23e7e097fe64d6791ac82"
+    },
+    "assets/templates/con_mark_char_1_3840x2160_3646_516.png": {
+      "local_sha256": "abf158ab506813b2512639243a4d23164258637171f0c30df469c53dca976c12",
+      "synced_from": "f497bd84",
+      "upstream_blob": "362860cee26796fc6cf574d0f59410f32507119b"
+    },
+    "assets/templates/con_mark_char_2_3840x2160_3643_777.png": {
+      "local_sha256": "2feb93ee83870f19b1911af8a97f7dd4cfe7ecb9d8373c2f7dcd509c60e49642",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a63b7fbecc67e8f472b3cbffa9bc53b8fefb6fda"
+    },
+    "assets/templates/con_mark_char_3_3840x2160_3643_1044.png": {
+      "local_sha256": "8555b8a6aeb3271c2f459ed7499e1c01805f2b579e11ac8c76a044576c96cb2b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "686e031e2a500972c5ec58ba872a3dc5d1f8623b"
+    },
+    "assets/templates/con_spectro_3840x2160_1465_1975.png": {
+      "local_sha256": "cd2461151987c19134c9b2cccd6d10e3e99b081e88f786688935378b607c54b5",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8f74bae95c14cca30cb7bb0e9c0bb584c7f2a636"
+    },
+    "assets/templates/con_wind_3840x2160_1467_1974.png": {
+      "local_sha256": "5bead5647721d2c3a47c9b3ca0f18175a3c0e1659374b8c5ace36fdd78ff14ef",
+      "synced_from": "f497bd84",
+      "upstream_blob": "184dac8b132ce16f3c8ee7d46084608abd6d3193"
+    },
+    "assets/templates/confirm_btn_hcenter_vcenter_1920x1080_1390_639.png": {
+      "local_sha256": "2b2d579cde9675effa8723d6934ba36e192a6f4f145f411c6713f151eb907597",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6d11b2833531d919db1227ad1193da99a9d20998"
+    },
+    "assets/templates/confirm_btn_highlight_hcenter_vcenter_3840x2160_2807_1236.png": {
+      "local_sha256": "cda176c48ca2876d0ba94c18aa997a9b547e2857d4d45ec462b41652689953c1",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1cf0140a15213ac8fe85042d8e04edd2d78c0a0e"
+    },
+    "assets/templates/custom_teleport_hcenter_vcenter_3840x2160_1909_1038.png": {
+      "local_sha256": "56f929d2454ca122fe934585756086085b81f50a960026c2851f4187b57cc61f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "146fc32ae0db7f671dabb97cfe417c485d2ca784"
+    },
+    "assets/templates/data_merge_hcenter_vcenter_3840x2160_1978_366.png": {
+      "local_sha256": "9e338bc71b75e37f14c9d7ae0c5e4e337a50b8dd7b61382445ed09c111c6817b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bfceebecbbe4b30536c83d9da95eeb3af9b8cfbd"
+    },
+    "assets/templates/denia_e1_1920x1080_1600_945.png": {
+      "local_sha256": "d909e02cada6ef874423c91ded57cbba611d607825dd07ecea717dba1edbbabd",
+      "synced_from": "f497bd84",
+      "upstream_blob": "49aa7f27e4b35e179f52edcd9025b4f80cd7455b"
+    },
+    "assets/templates/denia_end_lib_3840x2160_3593_1886.png": {
+      "local_sha256": "8f57173da36f960cb11f854786ea309c1794b16d2c5c79d5875fa96d98f3f38f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0fb3108f9226e7f9bce4f44a00eb423cb30657ea"
+    },
+    "assets/templates/denia_lib2_1920x1080_1600_945.png": {
+      "local_sha256": "fe81c2d7bce822808ef99f30eb26dd4445d6ae771dca7ca521a4e472cfdb373b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0844aef330326a8cf7c4f1611c9dd7681a85db09"
+    },
+    "assets/templates/dialog_3_dots_3840x2160_2600_1098.png": {
+      "local_sha256": "2a72c2a007b582c19a1ba9d01ff469d1cfaddd067d2e6b6c1b89675b71ce9241",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a33c6989e0213b1d5491097353e4324d09ccb2f0"
+    },
+    "assets/templates/douling_gen_3840x2160_1934_1788.png": {
+      "local_sha256": "b65d8a53427d2a6bfde0181dabedd7a61c11809a20412190f91bb107a10890e9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e850e1d694c08c4ad6f0f5002ba69bb176d539c0"
+    },
+    "assets/templates/douling_heavy_3840x2160_2822_1896.png": {
+      "local_sha256": "a12bed92cf6d9ee5c20e7972a3d2e9744a02de152cee11534bedacd914c977b6",
+      "synced_from": "f497bd84",
+      "upstream_blob": "42c09e2128c645f7a4099e5843d51d2fac53d68f"
+    },
+    "assets/templates/douling_zhen_3840x2160_1805_1788.png": {
+      "local_sha256": "57df9841d97584c43e2c3b5fc2e4aaa45b7ce5399a1bf3ed432cf9b2fa54bafc",
+      "synced_from": "f497bd84",
+      "upstream_blob": "01f5a795455e23049d1ba2b67db04aba6dc37189"
+    },
+    "assets/templates/e_3840x2160_3230_2016.png": {
+      "local_sha256": "c91eac6d6cdfb53cbca697cf069567a64684793dc7f0246bdc15aeab212a9bb0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2451092b4693c546d7b962b170390314d060081b"
+    },
+    "assets/templates/e_forte_3840x2160_2279_1994.png": {
+      "local_sha256": "756d50def4767dc0de5d253b51cb0d06d7668d72c4573d912a2c52c14fd92f95",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f50d5b483e2a58ec4028e8a8b8ff69f9b721cddb"
+    },
+    "assets/templates/echo_dropped_1920x1080_534_152.png": {
+      "local_sha256": "06f2131ab7fad2cbe2400d6a511565ba26b0e134e8e8224c91c7fdb701bcd4b9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "591b482afa96ed2abf330af3dc88e461fd383c35"
+    },
+    "assets/templates/echo_enhance_btn_3840x2160_381_1941.png": {
+      "local_sha256": "f34d1abb353d4b48f475e60c821aeedaf2c54db30d76649f302ed0419dd655e3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2ee7a14da505ed22caf0d3df4bde8b0149cf6a5a"
+    },
+    "assets/templates/echo_enhance_confirm_3840x2160_2322_1421.png": {
+      "local_sha256": "90b07472cd816fd41795861123ae772de16d1f9f107aa2d0d50e50c7e7244344",
+      "synced_from": "f497bd84",
+      "upstream_blob": "173b6951f579042d64ac4c9204c5ba80c05d844f"
+    },
+    "assets/templates/echo_enhance_success_3840x2160_2274_549.png": {
+      "local_sha256": "caee2a1542a63a84a97ce7f300a6239a11fbcff7c5131205462637c8b37b8ba0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "24762b6015f56d5210da678f2410ecdeaa6b3d06"
+    },
+    "assets/templates/echo_enhance_to_3840x2160_450_358.png": {
+      "local_sha256": "eb8a5d445e2658728b9542756e261415f414c0f6db98749b86f2b1238ca602f2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5641a1976592c1b1c36c0a7e1412274533451ddb"
+    },
+    "assets/templates/echo_locked_1920x1080_631_152.png": {
+      "local_sha256": "3fad9849294d8e127a70ef9372608ca093b45113d42661cb0c46fc303e0ba421",
+      "synced_from": "f497bd84",
+      "upstream_blob": "91b7dc7fb80fc6e15ed454e760e36cab95f48d82"
+    },
+    "assets/templates/echo_merge_3840x2160_149_1967.png": {
+      "local_sha256": "ce549864c909188de062e3d294ef1efab7d17a5d99df67a9bab40bb99631bf7c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "47a78a8eb8db74c9c679ef3c4e026385401b8470"
+    },
+    "assets/templates/echo_not_dropped_1920x1080_534_153.png": {
+      "local_sha256": "767d60e7e6b25985013e662afad0a02a7dbf0fa0ee2c398fcb7e04b1a4572126",
+      "synced_from": "f497bd84",
+      "upstream_blob": "49b272ff9edf1f6aab150d17cb721648047c6d54"
+    },
+    "assets/templates/echo_not_locked_1920x1080_631_151.png": {
+      "local_sha256": "22f78cc75a4dace979fc5e0340cd6b5999803c234c6bb5793af07c218d9304cd",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e74bf3bb715cab6cce8e7435f29860ec7b47ae40"
+    },
+    "assets/templates/echo_select_all_3840x2160_1060_1948.png": {
+      "local_sha256": "e022ca4062762dc9f07531446acfb1a184f530f5b40033afd2c43c499a3b1050",
+      "synced_from": "f497bd84",
+      "upstream_blob": "cc296d25b28cd76d385815bc09dbd6e91741461d"
+    },
+    "assets/templates/edge_levitator_3840x2160_3015_1887.png": {
+      "local_sha256": "f9133b8463bcf3fc65c112c356d366257c338fbfe95774a4a37f0728303cbc12",
+      "synced_from": "f497bd84",
+      "upstream_blob": "cee51d7a13e3d37f597b146c5f9c9440f27bdf95"
+    },
+    "assets/templates/esc_setting_1920x1080_1738_998.png": {
+      "local_sha256": "aa0c1c6449206bfacf1379f5248a5ae44e3b5f2c336b147362f0b70562715f6f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9b0764c21dfd184f4bf2df270498289d06d0d4cd"
+    },
+    "assets/templates/f_break_3840x2160_1694_1514.png": {
+      "local_sha256": "43abe693f5cfd0e33feed9461731c8436e13f0ed667fcfc0ba0287063cf31922",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c9e586ff915d1a3cc30da2d5fb482ab2b0569c93"
+    },
+    "assets/templates/f_break_full_3840x2160_1211_75.png": {
+      "local_sha256": "853a7759b236ffbdb568024266ccdc962dc3238b4dc36e03abb91ef0a23135de",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f2efe0ffd236fb92d4f169ca539949f2d826d010"
+    },
+    "assets/templates/fast_travel_custom_3840x2160_3220_1930.png": {
+      "local_sha256": "9edffb51e383957d7956b989abf62d385ff38720cbdc36ec25e78c9c7b108ef9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7369093a4027428d578a41212dc1dadd3f36f98f"
+    },
+    "assets/templates/forte_cartethyia_space_3840x2160_2296_1992.png": {
+      "local_sha256": "843c4518be53217aea2beca68b53a018fefcd7385f671f9b1b453bac9404ef80",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8baeb2623898dee421004341237e5a9452a8d0da"
+    },
+    "assets/templates/forte_cartethyia_sword1_3840x2160_1694_1980.png": {
+      "local_sha256": "e8f53d0b00279e56e6037bc373537f6cca87fe425df9416fcef0ca742ad9f00f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e0b67770f31fffedfcc826c4e41e9fd56a4e5362"
+    },
+    "assets/templates/forte_cartethyia_sword2_3840x2160_1879_1984.png": {
+      "local_sha256": "e57327b056cdde9fb901206dc22ae27d4d3de9a67622ce23b476f8bf681ab5ad",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9c136fb1d869a2909ece666f7558c902bb7dc55c"
+    },
+    "assets/templates/forte_cartethyia_sword3_3840x2160_2068_1981.png": {
+      "local_sha256": "0e2e9b692c13cdf2e33e5325fe87d17258be6fb2c776372d0c3e6529cd4b2ccb",
+      "synced_from": "f497bd84",
+      "upstream_blob": "efbbcc700b3e33ac764dee505a1dbb51a2e1c33a"
+    },
+    "assets/templates/garden_confirm_1920x1080_1079_658.png": {
+      "local_sha256": "0e09aa879e10e329d88967f7420c2103134a9cae96417b649d5f00634a915450",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8db78cbc842ea4f3e1e4a8628dac3db6c6161feb"
+    },
+    "assets/templates/garden_continue_game_1920x1080_1345_622.png": {
+      "local_sha256": "0a7ecb1a0c2be5bae50336a85525491df2d9c714e1086dd622c13e1395fa799c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b7474ba956c699488362d8e0b693894477c13a76"
+    },
+    "assets/templates/garden_get_confirm_gray_1920x1080_1319_837.png": {
+      "local_sha256": "9098aa6d3a165f094f2a303e09121c5de4b438a26454679813e6eec6d63aa7ee",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fdc297230f0eb28c061c932e2a2ce2ace02e983b"
+    },
+    "assets/templates/garden_get_gold_1920x1080_619_179.png": {
+      "local_sha256": "6beb21f2a3bd21cd51476eac806f21233057d3a8e01cd3512cb3cc2d3355227d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d26215a4e45dd0700f9bc6b71db53c36717df010"
+    },
+    "assets/templates/garden_get_purple_1920x1080_1506_173.png": {
+      "local_sha256": "93c2ac5760c7881d5a5fdf8cb076bcf22c8fc337f9e6613c71882fbcbdcf14e7",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d2e8070e35b300421e3bf11b3dd1e7bf5e658879"
+    },
+    "assets/templates/garden_get_skip_1920x1080_997_835.png": {
+      "local_sha256": "788ca6967add69d60e3185407cc8a534d8d98d25a7412331dfe5b628a64abea2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f4b9f6c9bcef818f4596ba1deecd0d6c9c9c0de6"
+    },
+    "assets/templates/garden_new_stage_1920x1080_1311_653.png": {
+      "local_sha256": "64a56ac28c01ffd7abbc660ca534eae376d06de9e1db01758d8dd20b54e3c513",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8c01147ca619c5275b998a8273a714d629ac90aa"
+    },
+    "assets/templates/garden_next_day_1920x1080_1614_963.png": {
+      "local_sha256": "638b319335e30798211d38f09492b90ce41787dc089d499f8cbf729d38cac28e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8e3faa5593b1905713629d54f31461b91bd549e9"
+    },
+    "assets/templates/garden_not_interested_1920x1080_775_293.png": {
+      "local_sha256": "0c7142bf744664f3834f087c8fad6a558484951c4204254a7bff0808f107963a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f9ad2eac3fa1100566a69a76c514cd97f3410c52"
+    },
+    "assets/templates/garden_not_interested_confirm_1920x1080_1555_628.png": {
+      "local_sha256": "eec8e0f1a35c430b5f817dca771badf2873f7011ede48a02cc528f3a612e1c21",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1dc6af9d45ef0246a7b9fbcd85216b176652c3b8"
+    },
+    "assets/templates/garden_shop_buy_1920x1080_1400_694.png": {
+      "local_sha256": "eb4601c0e19b6dd20e9045ee539c0287728fc50e53dfe64e26eedd42976dfc54",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a5949e804b81bd822b6fb5a8adbceb8f01f40c21"
+    },
+    "assets/templates/garden_shop_close_1920x1080_1595_54.png": {
+      "local_sha256": "03c901ca273093ccaf472959082422a42d30ec7ad561bda7e6d64e2d19fcbd48",
+      "synced_from": "f497bd84",
+      "upstream_blob": "199dd84e257939b13a7407eb5b6b1f8f0c52c79a"
+    },
+    "assets/templates/garden_start_game_1920x1080_1570_969.png": {
+      "local_sha256": "5700dfe2a3ffa06e39f3fb4fa1d86a2b5d33aa749f1eda5120ac5da068ca7d2e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4671dd0fcef981c461327ef01a1dfa33317070f6"
+    },
+    "assets/templates/garden_tip_close_1920x1080_1541_176.png": {
+      "local_sha256": "cd8912520e6789b298869622f1b1d5ab52ad9659645a5d4e059e7785e74cf3f5",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0e51e2600d4b108478109eb39a0a4c647317b5e8"
+    },
+    "assets/templates/garden_unpause_1920x1080_1360_455.png": {
+      "local_sha256": "5d6b96e8f7b27174b54f02b9bd5de7eba3b5ea934cea8420b53e484766d79809",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7a7b349d76ac41a04edac1a5c3effdfea75a9e91"
+    },
+    "assets/templates/gem_add_stamina_3840x2160_2174_824.png": {
+      "local_sha256": "afc683cf47ebeab827163e44548a3ccf4e7994b50476f9c62b939da5bb6f8773",
+      "synced_from": "f497bd84",
+      "upstream_blob": "92fd4d5cdbd18f434d64bd874017a4486fbe4335"
+    },
+    "assets/templates/gray_book_all_monsters_1920x1080_39_695.png": {
+      "local_sha256": "75ec5b9ad408854a8b27fa85ed05e66d4daca71d3e01c0ff938dd6d9c45caa8d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "72fe8d19149b22783ec33f2385f926ce4e24d1ce"
+    },
+    "assets/templates/gray_book_boss_1920x1080_43_283.png": {
+      "local_sha256": "8238b6c9c55c3f1b6768fde11a68c1ae08e67915b834ffa9497df59b46fa43ef",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0a0ebd2756aef62b6dc3d26ac5b305e67d0d9510"
+    },
+    "assets/templates/gray_book_boss_highlight_1920x1080_42_289.png": {
+      "local_sha256": "f98e4be047ffe9879d8d51be26a78f4b9d7a6d010b176218f9974b99298532de",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3cadd20a5d12faf101309e38fa3ed1d396d550dd"
+    },
+    "assets/templates/gray_book_quest_1920x1080_48_156.png": {
+      "local_sha256": "95b6b789b0c7c24945980a1f0cc423169ed757d3931f58813c417dd6803a449e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "95e208251b2f92a13a0b233dc91811e3015e3246"
+    },
+    "assets/templates/gray_book_weekly_1920x1080_42_426.png": {
+      "local_sha256": "9ca4cf046a8f57ab50ea4458774ed3b1b22f2be08d8238f4a12b11435ef400df",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ed406216ce18b1b935c66a4fc4ecbe39338acfbf"
+    },
+    "assets/templates/gray_button_challenge_3840x2160_2413_1859.png": {
+      "local_sha256": "e20792b505a7e8ba8f390eb81b48d687da2d7bfcf81bb1eb3e62e47695966db9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0f140835fccaca90d2dc0648dfd0eaab5a797e0c"
+    },
+    "assets/templates/gray_combat_count_down_3840x2160_1747_274.png": {
+      "local_sha256": "b85a4170e39b5eccc4c80337077d7bfad8633412df322354806b3e797b859d47",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fab4cd074b82c225cb28f820d6845692c5778a3f"
+    },
+    "assets/templates/gray_confirm_exit_button_1920x1080_1392_643.png": {
+      "local_sha256": "3dc15498c5c90a0e1d05c42f1a789802b4a470b5fd00b17b59f929dea897ab3c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f65c357e125d9f1f33dca26bca23d5e8c3715aad"
+    },
+    "assets/templates/gray_crownless_battle_3840x2160_272_327.png": {
+      "local_sha256": "cf7db966ecf523aef17f8ddfeb94ecc5a624e058be2c432e4952b2172b7ddd27",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b9b9d78eef607294fecef66561314dce65a04e0a"
+    },
+    "assets/templates/gray_custom_way_point_3840x2160_2513_1239.png": {
+      "local_sha256": "30a5828a723e5a5dbd686de798fdc98e64dbe804ca1fc9e064551d96704fc7bc",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2bc7963559465185db7c0f7bde8e0c232f45925c"
+    },
+    "assets/templates/gray_start_battle_3840x2160_3579_1875.png": {
+      "local_sha256": "83eb89ed5408b6e666065a2c09b6a60a14086c334e6209754b4314e2ae3fbf29",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ef1723e9aef0ebb22de0d6bcc893d792e4cf5c0f"
+    },
+    "assets/templates/gray_teleport_3840x2160_2619_1939.png": {
+      "local_sha256": "e836aa5c41036645f772280b2e06ce18581241ecbdbd0426e160ea29e47813e4",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a2c63f626929fa22aba2c61827ff69d48ad010e0"
+    },
+    "assets/templates/has_target_169_1600x900_1198_799.png": {
+      "local_sha256": "8578c6451bab74afa3196f671abd8b26e567497fc4c44035df9827b54580274c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "146bd463de2fa9688049048be18964ab551e6b62"
+    },
+    "assets/templates/has_target_3840x2160_2868_1917.png": {
+      "local_sha256": "7fe384cdeed7927ebe5007fb6eadf44945993fbd4ad260fd9ccbf75b7a13747f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "06596a6fcfc0ec156452c0ed1a0f690f4380485d"
+    },
+    "assets/templates/has_target_cloud_1600x900_1198_799.png": {
+      "local_sha256": "fbd340f35c06bc8a55fa4134914a152826ca51099866ea8495050bb10f26ce90",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4345602221e7708863312c8b325181a1fb2c1e2a"
+    },
+    "assets/templates/hiyuki_left_3840x2160_2628_1891.png": {
+      "local_sha256": "fb4b99538e6721321db4fae5c0e6be1e1cc5fe6d9c133ed83de8738a7fe0ba84",
+      "synced_from": "f497bd84",
+      "upstream_blob": "707978a88653b502cb95f01aee45e88780286094"
+    },
+    "assets/templates/hiyuki_lib_forte_3840x2160_2295_1976.png": {
+      "local_sha256": "d7506cb550e885b8718a4a6022d2e3a31a34db9922a2d5d4f18308aff42a072a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0c2a93b583b3937085972a6c1ddd948bc46cf4c8"
+    },
+    "assets/templates/hiyuki_right_3840x2160_2819_1893.png": {
+      "local_sha256": "3ee4c8f019f48fe7fa8b470319aa5c475999090c6d63c6a987883401c7920183",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e74a86078076784bad7e1361ea19a0f5f8e5400e"
+    },
+    "assets/templates/hsin_h1_3840x2160_2826_1893.png": {
+      "local_sha256": "52d947fc1bf396d42d46b959c08c116d2cd0516b1acd4b7f767d94c2ca0a9739",
+      "synced_from": "f497bd84",
+      "upstream_blob": "981f7ff3efbe3019700bbfcb110dc596785d2a8c"
+    },
+    "assets/templates/hsin_h2_3840x2160_2825_1890.png": {
+      "local_sha256": "c51af4c53bce85cd599419a53a1cb39195fccce562d28eb70495ca0af32aa9d1",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f285f36b3a24e2d08de8c14a546a44a5398be696"
+    },
+    "assets/templates/hsin_lib1_3840x2160_3588_1894.png": {
+      "local_sha256": "0a4744786dda66c3bedfb174128de99a42847e86f4b9d4236bfab0516086d58e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d5398bb19849b81be843e38422b8c3e7d587773d"
+    },
+    "assets/templates/hsin_lib2_3840x2160_3587_1891.png": {
+      "local_sha256": "076a29e670fb8533ce8537576dc1448a2e4ca5ae8746214b377df8c43da4abb4",
+      "synced_from": "f497bd84",
+      "upstream_blob": "90ddeb0bab0080746a23eee333b69e831c1bb437"
+    },
+    "assets/templates/illusive_realm_exit_3840x2160_29_63.png": {
+      "local_sha256": "6355f7d152b5d02f5c09cf0c4c1f00d0d2ec8a042fe6d02286f3b5abbcabf119",
+      "synced_from": "f497bd84",
+      "upstream_blob": "390822a53364c9d7cf896f08a7d0e5be94d397a0"
+    },
+    "assets/templates/illusive_realm_menu_3840x2160_217_70.png": {
+      "local_sha256": "beaac3a433c8a7cf74bb2767ce82174f8f8d4fdfeac1f5e003ecec8aac2f4a83",
+      "synced_from": "f497bd84",
+      "upstream_blob": "102ab4979dbb8018d2ae52af037667e50c9c8062"
+    },
+    "assets/templates/iuno_heavy_3840x2160_2823_1893.png": {
+      "local_sha256": "c199471b18e337ec09077ca7e6b63da0c5ef093ec1c0f29e9b29aba994a3a11f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9b956745ddb2373c05eafd731eaa95b9a69a6ad9"
+    },
+    "assets/templates/iuno_jump_3840x2160_2624_1893.png": {
+      "local_sha256": "fc57a244cdb4061acf631fff780db8b9b0ae777a67ceaad5a8ae6cd9a1d6bf1f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "be22c6f7769d20ef9687dfb12c10839400e5dfd6"
+    },
+    "assets/templates/levitator_roccia_3840x2160_3012_1885.png": {
+      "local_sha256": "bb4bc764aa53495d2447500f9fc8faa98d8f0e5d193b73d759f07f02872c7ae9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "092951e4ce4ad7e5f51918838becf312f72edf4a"
+    },
+    "assets/templates/lib_cartethyia_big_3840x2160_3592_1888.png": {
+      "local_sha256": "8e750789cd55e6851cb9a6586fdaa9cb46f1e00388437fad2af5d8c187c96a40",
+      "synced_from": "f497bd84",
+      "upstream_blob": "81d0edf7503b87ab5c1c424ec773fdab3dbbfb10"
+    },
+    "assets/templates/lib_mark_char_1_3840x2160_3648_469.png": {
+      "local_sha256": "63794b0909625aab64b050572dd325dfc73f8c04dbb52e946553cbda9508b958",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f1d9e17b2451dad86ef612fb58a9de00ca9130c6"
+    },
+    "assets/templates/lib_mark_char_2_3840x2160_3648_733.png": {
+      "local_sha256": "22d5069474a544cf5683f77dcf4fab5968b421bf2294ba5fc2e37a1d77761b1b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d1e99a7f18e0bf811866d500c009a88160198362"
+    },
+    "assets/templates/lib_mark_char_3_3840x2160_3647_998.png": {
+      "local_sha256": "3e5ced86489fea58c528b454fd6e1314c27efa3caac044ebe7f74dbd1d378354",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5ab09a38d4933f80b652258a7e49ef3fc769030a"
+    },
+    "assets/templates/lib_ready_electric_3840x2160_3655_740.png": {
+      "local_sha256": "b59f61a5218917e88472f451c0ab8fed17dbb7e8e326a08cd3432b484fe3ff97",
+      "synced_from": "f497bd84",
+      "upstream_blob": "adcd4b56b85a0ed0bb0ef32061ee6213a71f5130"
+    },
+    "assets/templates/lib_ready_fire_3840x2160_3654_742.png": {
+      "local_sha256": "509cde885b92424ab513b2aec47817b08012f019e8005e4769921a22b2673041",
+      "synced_from": "f497bd84",
+      "upstream_blob": "cd1746d790556fbce8418ecde78f3e1cbc63b050"
+    },
+    "assets/templates/lib_ready_havoc_3840x2160_3653_1003.png": {
+      "local_sha256": "c1e81d06decbfe42e75ec51ed1d79ed343201af49172d19ff1497e270e6c192e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "45c00e05420525d042c6958a44b1bac8e7c07032"
+    },
+    "assets/templates/lib_ready_ice_3840x2160_3652_742.png": {
+      "local_sha256": "fbe8029bc7b0db0064af6d48bdf723af92ff0198ff2fc56e046398cb0914c785",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1a772075151415db46bd9571c41551a3d5eb2a37"
+    },
+    "assets/templates/lib_ready_spectro_3840x2160_3653_1006.png": {
+      "local_sha256": "520697eabee1414e71fb5b7adf96c6c9e528cda37c19be00440f276c1c9a45f7",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a91bb195fe6a7498b4315746c3bc51dd31dd8d22"
+    },
+    "assets/templates/lib_ready_wind_3840x2160_3653_475.png": {
+      "local_sha256": "73226b33e8c005f09d9d426410ba7a8f46beeba8bbedb6a9635dc52828b3e53e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "31e4c136a2fd45aa3b60d0550be4e0d2dfcd2a1c"
+    },
+    "assets/templates/lily_heavy_3840x2160_2839_1900.png": {
+      "local_sha256": "a36cf8a07b8ac65dad15eae5ecd8a44ec52c6134f72fc5d65f8f86fa00c3c259",
+      "synced_from": "d0a59291",
+      "upstream_blob": "eb201fb854932dde0a1d2dea8e1a792ab62de776"
+    },
+    "assets/templates/lily_liberation_3840x2160_3603_1904.png": {
+      "local_sha256": "9aa78d7c3b7a6892b54fb681de7aed1db726da74b9fd267fe1ecf5ac08426243",
+      "synced_from": "d0a59291",
+      "upstream_blob": "8ade2fa73e781291a51fd43860d5ef2b35fab3bb"
+    },
+    "assets/templates/lily_slumberland_3840x2160_3584_1937.png": {
+      "local_sha256": "810dfaabddc4ec8ef6c43943a2deb5caf5125cff33d3352557c555bf5c67d6c9",
+      "synced_from": "d0a59291",
+      "upstream_blob": "3025b08c4a901149b78aa8c1dadaed1c2f4ce7ca"
+    },
+    "assets/templates/login_account_3840x2160_3567_1188.png": {
+      "local_sha256": "1487323fcd2af121055807131a49b9e66223f712beee8deb4bd3539cf15d4054",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a87e8634571b6148564637f0c43353d59c6735a1"
+    },
+    "assets/templates/login_close_1920x1080_1553_159.png": {
+      "local_sha256": "42d441299ae1b5adaf5445c47ca7e744db05f7168f040b4a897c47a4044294ca",
+      "synced_from": "f497bd84",
+      "upstream_blob": "de877064de0b48db0928f85440c4eea06ea1efca"
+    },
+    "assets/templates/luhesi_kick_3840x2160_2810_1891.png": {
+      "local_sha256": "8593584b80c0f47c320e5e855d0ee002be01ce274a28cdb0e4f6db9fafa3862d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "52ae4fa4aa2266c89388cc724460dd1b84729c57"
+    },
+    "assets/templates/lupa_wolf_icon1_3840x2160_1746_1971.png": {
+      "local_sha256": "26efad6f45bfd18ccf87dcd378e2cd10bab9d281c27b83f217ac0bdd38fe0d9a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c9a0340b8c62d925e5efe27887ddf5eabebc6f9e"
+    },
+    "assets/templates/lupa_wolf_icon2_3840x2160_2034_1970.png": {
+      "local_sha256": "f130ad9858ce4f9784ee56cf89d51e8aa32b55ff0592c70d0229929dcd66e2d9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f6ac7d88a3693dfae6c4af6bfb09d53472bfd245"
+    },
+    "assets/templates/map_my_location_3840x2160_3581_507.png": {
+      "local_sha256": "c950003342b9c2b1ca7e26f9e998eb343d149454cc296540b526702aa1c5385f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "721e1b03fb2f2c9e931b08c052491732fbd28954"
+    },
+    "assets/templates/map_way_point_3840x2160_1711_1044.png": {
+      "local_sha256": "ca6da727a5512c4e36949d5d670e5e5422035a55ba4a1c4a621e0c80ecc67fa9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "cdb26b8153882aa73625bd75f67a8155778adc79"
+    },
+    "assets/templates/map_way_point_big_3840x2160_1316_817.png": {
+      "local_sha256": "69f205ec58ad1183c06cbe96241cf12a3e89cf1e67ad54e841cd0073db0fce33",
+      "synced_from": "f497bd84",
+      "upstream_blob": "45b5e6d2ed21b47568c85802a51a022a48d0c6ca"
+    },
+    "assets/templates/map_way_point_pop_up_box_3840x2160_2439_837.png": {
+      "local_sha256": "6d4cc20a2f9d09ca89834b98c17dc1a7685ba6a026acc1f9ddd9b2eb3df3d50e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "86f6fe584c725bda0f763e634a299e6f6f1fcd1b"
+    },
+    "assets/templates/merge_echo_check_3840x2160_3169_1266.png": {
+      "local_sha256": "21268ef5bc1d9e12d8a404c4f9315baa9a0093e862567d04fdc4ac23b54761da",
+      "synced_from": "f497bd84",
+      "upstream_blob": "76f89e02102f2fd62d256a9314ea292ad4045e27"
+    },
+    "assets/templates/message_1920x1080_409_46.png": {
+      "local_sha256": "4de4eda64194bf8fda72bf8dfe80d1d40ac749e36aba65ce8f5173004c67aaab",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ff3b7f6c238bf57824f0d50c2e3665780e28ffc2"
+    },
+    "assets/templates/message_dialog_1920x1080_434_637.png": {
+      "local_sha256": "b9af297e735027c21c68f554c5ebc9f861f9552ffbfa605a9175794768b7a246",
+      "synced_from": "f497bd84",
+      "upstream_blob": "412fb1383b8c40239e4be3e69d4cf4413678ff50"
+    },
+    "assets/templates/monthly_card_1920x1080_841_582.png": {
+      "local_sha256": "cc287aff00c02988891f7d4a8f326d6bfc46d0aa2b42e007905d6d2482cb4bfc",
+      "synced_from": "f497bd84",
+      "upstream_blob": "021b11078926edae647e01e4deb0910a64189471"
+    },
+    "assets/templates/mouse_forte_1920x1080_1141_978.png": {
+      "local_sha256": "b9cac4fa72e34c76b05492f542af0264f8266c6b3af4740182838b693c9b124a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "01c3366092b30e03be12135b26ae5711ccd84578"
+    },
+    "assets/templates/multiplayer_world_mark_3840x2160_77_69.png": {
+      "local_sha256": "3c64c7f47861d6cb74afcfa6f8892f3acd91d3940374c28d96dba25c9835ae9c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7f4b0939324559b582e0e177559ba43cfbe16c86"
+    },
+    "assets/templates/new_realm_4_3840x2160_3473_1218.png": {
+      "local_sha256": "aa88cdf32f1bd5632a75d84fb24e4fd685baf9e5887c2b33bd69decdb7399783",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a35659a9331b1b0d447ef7fc523e702d5d0c8a91"
+    },
+    "assets/templates/no_target_169_1600x900_1198_799.png": {
+      "local_sha256": "e9136f0f833fecce53098d8c9e720d4763a4f5cf8ed20c360e0d729ac7c44a92",
+      "synced_from": "f497bd84",
+      "upstream_blob": "36f529f610f5a16c7358a09ddf85990a63664821"
+    },
+    "assets/templates/no_target_3840x2160_2868_1917.png": {
+      "local_sha256": "96b563d52941392d5f3eba596a0a4274c9769d06e6d191f6a3c137fc15c5a17e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8e47580a1e0db82810c3beb51623065244059b07"
+    },
+    "assets/templates/no_target_cloud_1600x900_1198_799.png": {
+      "local_sha256": "b2246c683c9292b502624006902832704b54f8378140684b01f8ad8c933d5fc0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4c0e451ac86036f8cd712bd8f5a34744cc3f8260"
+    },
+    "assets/templates/on_the_wall_3840x2160_3150_1875.png": {
+      "local_sha256": "b17188777936fd8a14e769376182347e0a6ceb9628ec097321558b3fd74f7185",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3f0cc210a83421d1e59da85918292b8e84020dd4"
+    },
+    "assets/templates/pick_up_f_hcenter_vcenter_3840x2160_2441_1090.png": {
+      "local_sha256": "65cd7e19572209736d5acee5e0ee2c7ac38c11e9d6b82ef490fc3268116d3e6a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "af7174964bc9b940c7f9ba22c4d25f4df592343c"
+    },
+    "assets/templates/pick_up_xinyao_icon_1600x900_1076_449.png": {
+      "local_sha256": "66ec6c11f96abebe3dda3b39ad7fb0a5d5c1ecefd87a89ce14e718d9cc7b13da",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2787eb3af1e75ddf4fce13c7227c59457214f359"
+    },
+    "assets/templates/purple_target_distance_icon_3840x2160_2090_867.png": {
+      "local_sha256": "73754fda41d59580f0bb9492458f447c8758aef9657a1f2c4825cc75853e5943",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ff6f578c3e715cd0b1e0bd479d5316aca4329acb"
+    },
+    "assets/templates/q_3840x2160_3613_2014.png": {
+      "local_sha256": "97a9fccacad8de72acf8a5aecdf296f22244bb0c5539f37c4f80186c10b19444",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bc097f925697d8ddb44e1e097154dd12d797dcc7"
+    },
+    "assets/templates/qingxiao_e_3840x2160_3205_1892.png": {
+      "local_sha256": "5c87c5c598bc3da44cdc8dddf7052dc059fe1f43920eff5da5eec9df8800f771",
+      "synced_from": "f497bd84",
+      "upstream_blob": "39e3b4acfa7cfc837a923dccdd5edbb957f83817"
+    },
+    "assets/templates/qingxiao_h1_3840x2160_2822_1887.png": {
+      "local_sha256": "edac0750b1d3d595c66be4cab229544c85d9600e452ed9ea05b98505d945d44c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3acec0f47cfe76ec6c547d9a59cd13a46c1b40fd"
+    },
+    "assets/templates/qingxiao_h2_3840x2160_2818_1892.png": {
+      "local_sha256": "a21cec8f659c167c08c5883a52200a83a19c0e1766efd7d7c930579eb4f0fb09",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e70be76720f4cbcc36f0d801947218851f0253b1"
+    },
+    "assets/templates/r_3840x2160_3421_2015.png": {
+      "local_sha256": "56524e4e46c5d489f54cb7afc29618b2f9d063bc45d77978a6a46087cc9b5724",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bb96098dc0eb3a76ed5b73a757c02f0cc54d2527"
+    },
+    "assets/templates/red_dot_3840x2160_221_577.png": {
+      "local_sha256": "a63146a3fd85b801567d5e624ee7ffe13132cf25c9bec5401c4f311a304158d2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "92a262fadfa5890bafb98fe7530d406f8b888b1a"
+    },
+    "assets/templates/remove_custom_3840x2160_3084_1924.png": {
+      "local_sha256": "aca77bdb686a84072527cffc6cafee9f356bc7f72715d5aaed0daa49339e0dc0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3ac381a444a51642dc5ae78f26440fe852a0519c"
+    },
+    "assets/templates/revive_confirm_hcenter_vcenter_3840x2160_2887_1405.png": {
+      "local_sha256": "ff07004a5a0a36780d2c9914901365b74a8415397ed5967b16e368459481edf1",
+      "synced_from": "f497bd84",
+      "upstream_blob": "968ceee7e92e3333dfe393fd6485ae672220523f"
+    },
+    "assets/templates/roccia_air_forte_3840x2160_1684_1978.png": {
+      "local_sha256": "2f07635338dc8400880b65f5e2455572e98f4cfe2fb32ed50ee6df4188627907",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6dd95635da7f1552d829e4e92e37432511cda204"
+    },
+    "assets/templates/roccia_air_forte_second_3840x2160_1866_1977.png": {
+      "local_sha256": "59a0d6860c0471449e211d4cfb7cb166c49e3b67b162c55050deac42a2f30075",
+      "synced_from": "f497bd84",
+      "upstream_blob": "536fd564dfd5ce498cf673ae9e05ce21fd2f13c9"
+    },
+    "assets/templates/set_name_10_3840x2160_398_379.png": {
+      "local_sha256": "f2cd4e0a6ff5d7f55b7bcc02fe6b63fe53d92ad8cf71aea2c9f15fa06fe94caa",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4f59b5d578a314c0061a3c15170839888050c258"
+    },
+    "assets/templates/set_name_11_3840x2160_666_379.png": {
+      "local_sha256": "aca9b754e4320bd1bf53e8d6abd0c9f91cb9518bcb1acb31a1dc119a62d138aa",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7b2c3f09827487460d7e3d5929e4db48b9384a09"
+    },
+    "assets/templates/set_name_12_3840x2160_1201_379.png": {
+      "local_sha256": "c94341d3e4c3c18749af2e4af895d6a9ae0a1ff8c2dc828c785eb58ee05e9245",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0eb002050d2751adc0a0743c8261172a47c410f5"
+    },
+    "assets/templates/set_name_13_3840x2160_1467_378.png": {
+      "local_sha256": "e0e10601577b04c2a0ce289851dcca8b309f033ec7739fd19208d6ddd7a3e6b3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "269c4b7aff0b5f985082bf1e2e9b6f6e13dcfc68"
+    },
+    "assets/templates/set_name_9_3840x2160_934_379.png": {
+      "local_sha256": "7558b10bc04bd419a60253b719f783103c19cf0dc92a4ca880428c81db95e6c6",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fdebc64c0167eb96c87dfe6bfe73337d6867313a"
+    },
+    "assets/templates/skip_dialog_3840x2160_179_104.png": {
+      "local_sha256": "6cdf8f60343fa78f988c3f37905f7cef538ef6ab8b608f494e62f9336a27df62",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d53aba980a621ddb30abf8fee9eaa651aaa03ab6"
+    },
+    "assets/templates/skip_dialog_check_1920x1080_830_570.png": {
+      "local_sha256": "0e723d3afd5c676167dc68b771cad498ba7cd7985691711a34555ba59846f662",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2699c5828b4f5b412e700ba5aac9245333ca24ae"
+    },
+    "assets/templates/skip_dialog_confirm_1920x1080_1073_645.png": {
+      "local_sha256": "48f1c43669674318c804e5687f0903cfb0df978929f61f371105840c97f7b70b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1ff58f4adfa1c1ac105804f44d5381ebc32a7c35"
+    },
+    "assets/templates/skip_dialog_new_3840x2160_136_350.png": {
+      "local_sha256": "d2d65320a51ae3876979bfe4db1532ddd4a2957a0e5734ec083661cb3b59d03b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1b034375160577f2a7c4190f51fcb25afbc97d82"
+    },
+    "assets/templates/skip_quest_confirm_1920x1080_1157_734.png": {
+      "local_sha256": "23fc79b94d1c51884eca44244eb62ccac6a593588b4f051dab373e6e2f4ef305",
+      "synced_from": "f497bd84",
+      "upstream_blob": "450d35a0f01d29399446c6c679f53c09be74a032"
+    },
+    "assets/templates/skip_quest_confirm_new_1920x1080_1106_683.png": {
+      "local_sha256": "15365b3af45cf96bcbf5aff1f03f21f92e5bc300c371a2ce8267131011db2a23",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d5295c875680a9e012a1478a38dc67c6fc491743"
+    },
+    "assets/templates/star_3840x2160_139_187.png": {
+      "local_sha256": "f69f546b97941dcd124462f7cc81dde7f281a46b42935f748f8d58e4165b1841",
+      "synced_from": "f497bd84",
+      "upstream_blob": "69cf9235a8aae03eb157a8c3fc22e548e82aadf8"
+    },
+    "assets/templates/suisui_e1_3840x2160_3211_1896.png": {
+      "local_sha256": "0aeff9ea53fbeb6951848d25e4940e5610eb74155f8701b35b4cc2739dba0fb2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3d93ca4eb5f868623cbc37a0007538bfbe7251e9"
+    },
+    "assets/templates/suisui_forte2_1920x1080_947_986.png": {
+      "local_sha256": "b884fd5b7db741aedeed24590de46302601f6c46f2b772c97fa27495d6962265",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bb6b8cb4794df72d110038ac595e494c1c3bbdbb"
+    },
+    "assets/templates/suisui_forte3_1920x1080_1036_981.png": {
+      "local_sha256": "4b45fdb7bbfbec10800d3296c77baec7d9d9ac0ca603b38d0bbe42cc2b613e63",
+      "synced_from": "f497bd84",
+      "upstream_blob": "baf9757a16472632aae6997dc8f3003f3e7667c8"
+    },
+    "assets/templates/suoming_forte_e_3840x2160_3209_1893.png": {
+      "local_sha256": "83d94e48245ceb87267e856e348fb6d3353c9aa35f14d6fb6c3595fc7a730859",
+      "synced_from": "f497bd84",
+      "upstream_blob": "359696b56fc1b41e90c6c0bee16895ad0f8205d5"
+    },
+    "assets/templates/switch_account_1920x1080_1796_533.png": {
+      "local_sha256": "a5a5f65386f1ed739912c1b2eea74430d44c355ae41443ce192b56aa884ffa93",
+      "synced_from": "f497bd84",
+      "upstream_blob": "04c5f8222cb9dc927c7d97c26259e454e08925c6"
+    },
+    "assets/templates/t_3840x2160_3039_2015.png": {
+      "local_sha256": "1c54e08be762a077ac9ef4b96dccaf98d54493d5dec374e4d4916e76460962bf",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6345bdfc7f3d0a791338915324dfa888e78344d9"
+    },
+    "assets/templates/target_box_long2_3840x2160_2482_1909.png": {
+      "local_sha256": "17dc1d3719e3e4442ffb9b8776dd9f206ab442e4391d492bea7f9dc930c566bb",
+      "synced_from": "f497bd84",
+      "upstream_blob": "792e174f39f92030244aa2b90b871fa8ec0697c8"
+    },
+    "assets/templates/target_box_short_1920x1080_1526_956.png": {
+      "local_sha256": "4a10e1baadf7d7b6d09954c888831ea9f02fc61215c2765c9c9608a86c4068da",
+      "synced_from": "f497bd84",
+      "upstream_blob": "970bea1cb8e5f08c4c82cdd5a7bec7a26507f9fa"
+    },
+    "assets/templates/target_enemy_long_inner_3840x2160_2691_1934.png": {
+      "local_sha256": "ae6a749548b861541ff6183d6a83c8ec0255ea069ea187b8b5425e77918ca97b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "72f49cde48f2e31b0d590cbabaa08435e7a5b12a"
+    },
+    "assets/templates/target_enemy_white_3840x2160_1688_983.png": {
+      "local_sha256": "e1a3e1e82dfddf1faab4739b54dcdba8255d3d1570f6767404724a944a983eef",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d67f0607c9f699858d5653428183c7f0bf705bc7"
+    },
+    "assets/templates/team_close_1920x1080_1780_30.png": {
+      "local_sha256": "ac542cae1ba37fcf2f2a641befc3e51c46472db1516fbb7b4ad2c777c230bf16",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b7d687e1f2d20ed3dd8fd4bdc95ba3ead6d3a2f3"
+    },
+    "assets/templates/team_start_challenge_1920x1080_1754_950.png": {
+      "local_sha256": "5615beb2ee030c0e9e0ca56315e9b7c9c74eb528e8a010da814040b56f5e7294",
+      "synced_from": "f497bd84",
+      "upstream_blob": "85f638d3d3039cc874f7c2633e36df7c067cab48"
+    },
+    "assets/templates/teleport_port_3840x2160_1827_1155.png": {
+      "local_sha256": "8674f25de94a84c5024dacb81bdc308dd06d2e3b1e74a496fd3d5302ab3c3ed9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4d0a4b0afd75ea81ca5a4cfff226ddb888c43ec4"
+    },
+    "assets/templates/the_garden_max_1920x1080_1227_43.png": {
+      "local_sha256": "95e2c6277366540970b5c3c23a0a68c33432a20279a5a33e913c9b7aea626680",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5bc5052b3efc54b0fd488f20a31c96799b73ba08"
+    },
+    "assets/templates/tool_teleport_3840x2160_3005_1890.png": {
+      "local_sha256": "3773258bab32915da67bd08ec45d28df80f9dc4451df92bcd1ed1cf6714f2fe9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e70b99b4ff372f3d415cd8c5d5dc3a9e405f7f6a"
+    },
+    "assets/templates/treasure_icon_3840x2160_2925_970.png": {
+      "local_sha256": "0b79d322320f666d67def9d4b5bd61b4ed1976f83c9defddfab6310c873e7573",
+      "synced_from": "f497bd84",
+      "upstream_blob": "660891caea1db634c83224e0a95f28dd7db4361d"
+    },
+    "assets/templates/wheel_levitator_3840x2160_2218_1370.png": {
+      "local_sha256": "5c8c60ec9b57c43255b1e717d95b927ed0620dad489d040517c3297e03ac4e0f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "117d6b2e8454c5e912dc2743d407dfd178d87269"
+    },
+    "assets/templates/world_earth_icon_3840x2160_26_97.png": {
+      "local_sha256": "243a560f44bdc9eaf9329299f6a46cc64f716b488e2cb024342715e3ab67512a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "e8877f4df20e7e72390cee09a1510c6c6c06f459"
+    },
+    "assets/templates/ww_1920x1080_790_246.png": {
+      "local_sha256": "23a68d1179ee8bce8914fa83303a82dc42b4ccb12314c49a23dc01143b624374",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4c0648f8699722f6142ca4939c8bc60cebd30774"
+    },
+    "assets/templates/yangyang_sp_1920x1080_1774_227.png": {
+      "local_sha256": "57cbdebedc0b07643cd8fa500a4a46bab835dadc87e15e81be40cd02e31c676d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "40b1d4c5d309b2e845340786e585ab028f95adb8"
+    },
+    "i18n/es_ES/LC_MESSAGES/ok.mo": {
+      "local_sha256": "567ad38ab70521017d771a8fb6a58588f44800c0cf940423636f2b6e0a71947f",
+      "synced_from": "d0a59291",
+      "upstream_blob": "991cfe665144cc3ed33a36d92fe692916301cee1"
+    },
+    "i18n/es_ES/LC_MESSAGES/ok.po": {
+      "local_sha256": "da97d4de925e13f7eff744ce9a2a8c255a267491475d376b44166b9557f1cc75",
+      "synced_from": "d0a59291",
+      "upstream_blob": "b2df4af1cadf07854e257cd9c437abb60cf8cbd6"
+    },
+    "i18n/ja_JP/LC_MESSAGES/ok.mo": {
+      "local_sha256": "bd21c14bcd0028f6c1fb62d1393f0ad58bcd1075e3ccb2ff2f030af759bfcc9d",
+      "synced_from": "d0a59291",
+      "upstream_blob": "6a4788551f74bce4ccbd8b53ef7eb1c9ab905f14"
+    },
+    "i18n/ja_JP/LC_MESSAGES/ok.po": {
+      "local_sha256": "412c283cd6b45b6942c614303b8d5885d8d93c4dc1cf3f7c0a76051736f68a8e",
+      "synced_from": "d0a59291",
+      "upstream_blob": "03fb28fac616aadd214f6647750a150d2198ba08"
+    },
+    "i18n/ko_KR/LC_MESSAGES/ok.mo": {
+      "local_sha256": "f97c9e395d459f295a7921f9eaa01b669b72919913aafb208e4a8e0ee016f5ef",
+      "synced_from": "d0a59291",
+      "upstream_blob": "9d67f983bdf3a2a820b815ddabb5d263773bc2ed"
+    },
+    "i18n/ko_KR/LC_MESSAGES/ok.po": {
+      "local_sha256": "bb47055eb5cffe5a307ff3d7e6f64d09f70f6af97dc6f3b6c4a50be9639ef34b",
+      "synced_from": "d0a59291",
+      "upstream_blob": "9531821ec6760176f4c02943d45d1f8ecf13fb21"
+    },
+    "i18n/zh_CN/LC_MESSAGES/ok.mo": {
+      "local_sha256": "ea8da720b555ee392968b8e90f814c1a7ded6717ce3f5e394e364427aa040f29",
+      "synced_from": "d0a59291",
+      "upstream_blob": "1d9b8a6eb997ad59ddd683140e6ec13dce7c5fdd"
+    },
+    "i18n/zh_CN/LC_MESSAGES/ok.po": {
+      "local_sha256": "9e3181b011e8b2b06bf6a85249fdec38db35e283ca4bb56f28bc644889078496",
+      "synced_from": "d0a59291",
+      "upstream_blob": "fcf0e81b8bb2e5144d3ccf9ea94b924a1e1077a1"
+    },
+    "i18n/zh_TW/LC_MESSAGES/ok.mo": {
+      "local_sha256": "1515a7b2e32ccf9b8f4e45de132a47b62362ff8ea55bdfc153d389c341fdf1fc",
+      "synced_from": "d0a59291",
+      "upstream_blob": "efb2d253b58b7bb1ca1baca62fc7be076dcc1f65"
+    },
+    "i18n/zh_TW/LC_MESSAGES/ok.po": {
+      "local_sha256": "480bef41a9b53a1fafcd3fff08f5df9807509e50eebcdb9da272bec390007b0e",
+      "synced_from": "d0a59291",
+      "upstream_blob": "7cf3ca313ea6a95f6bfe69a19271d11630c491e9"
+    },
+    "src/Labels.py": {
+      "local_sha256": "12d61e4638fc8d93b97663ec0477d88b542ced2f3b652867cdc464f2dd3ec872",
+      "synced_from": "d0a59291",
+      "upstream_blob": "1d77db49ba3611a4b5d58a6e06cbe52b9c2cfc52"
+    },
+    "src/OnnxYolo8Detect.py": {
+      "local_sha256": "d07532b3082e946b3d0a2a0b7bf9d01e6b3f17fd52cabbc0b204b553ef53cbf1",
+      "synced_from": "f497bd84",
+      "upstream_blob": "dfef798a3545da9594aa04de0bf83bc0782c6f10"
+    },
+    "src/OpenVinoYolo8Detect.py": {
+      "local_sha256": "3191fa227110785e484d402b821547205f3f85a96291c9e6e3930e56d67d371a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "34cc6595d317366fa1a6af5981e6f05398601607"
+    },
+    "src/__init__.py": {
+      "local_sha256": "1dc07a345b3aef311c1b2bdd93a6d5d012ae492aa99769bd184074a22493af08",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9e55d699f4dc62b5283a70c0f6948d49a0fe1ff8"
+    },
+    "src/char/Aalto.py": {
+      "local_sha256": "751632d9f5a65e63097b7cf8355ab32f454ad01bb12cb3bac5865036cda44398",
+      "synced_from": "f497bd84",
+      "upstream_blob": "88a8e39c8a44c0a3db289af89973583e02e07038"
+    },
+    "src/char/Aemeath.py": {
+      "local_sha256": "9706df3a8151b59a280dbdce78b7bacf076b53ef08e00bcb9d8ce97bd93c67bc",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3bc95df9a9b308f5ed69971442d60c001e36bfde"
+    },
+    "src/char/Augusta.py": {
+      "local_sha256": "e1854ced9585ecdafdb227ba992af420c68a3245871f01776f6380652867a74f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9d45f8ad800b2e42a2dbf81bbb237b211f1a8314"
+    },
+    "src/char/Baizhi.py": {
+      "local_sha256": "8c4064f5922fb05b8bbfffbc91b133a5aac5e37f27a4ae62bd9d2bf5adf273cb",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f312a7782fe774376f4125341557a917bf8b7b54"
+    },
+    "src/char/BaseChar.py": {
+      "local_sha256": "28d44d36735c8b9dff778283d29e079b9aac53a3075e42dd2da33f1c868c784e",
+      "synced_from": "f497bd84",
+      "upstream_blob": "11898871caefe80b8ecec0a5e09b43499844dd9e"
+    },
+    "src/char/Brant.py": {
+      "local_sha256": "876e82febb405393ee8637664325115b9c7c3f16a7fd520344db03d6462a9777",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3ee18ca8fd15f895fd5a88f2f3c925a974c34d10"
+    },
+    "src/char/Calcharo.py": {
+      "local_sha256": "e987a65c3923a719a0cda3625b86ddbba987e54a73b34a7d6225134960270198",
+      "synced_from": "f497bd84",
+      "upstream_blob": "08fa4227a59f950c84d2ae73cb19f04b81800b64"
+    },
+    "src/char/Camellya.py": {
+      "local_sha256": "ff0bd3bb4d8638467dfb7e13494aea3d9282208159ee1feba4c69bfa81f59562",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a6fec65d6ca786bb703775d5524309d7cf16e806"
+    },
+    "src/char/Cantarella.py": {
+      "local_sha256": "7ceca495543160b76f9b5020395a3d77aa111234420305b30cbbfedad2389975",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c627cdc2be87e1ae6e1ff9a8cc2dd85ce99ef860"
+    },
+    "src/char/Carlotta.py": {
+      "local_sha256": "087becb3cff20a2d9180efb6cf22b0168f39356c8dd02cd370acf691ecec4a6d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9f4342dc0b5fdfb40302f8a52bc50c39b1f2c94d"
+    },
+    "src/char/Cartethyia.py": {
+      "local_sha256": "0b9e70249763675990c85cf621f021754473370ccb8ba61affe26d9ba475c901",
+      "synced_from": "f497bd84",
+      "upstream_blob": "29088ba9fcedccbe3d4c9fbfeb1d0694b0511064"
+    },
+    "src/char/Changli.py": {
+      "local_sha256": "b236e1189ae7c6f5a0c2b2640719123e8397946e89d447216640e93cc7df7950",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0e18871f6037a18d7672ea77ee01cc79a3534754"
+    },
+    "src/char/CharFactory.py": {
+      "local_sha256": "d25ba5e522c7103944a807ea055a41cb4d39748faf270ef5d0523816bb740cfe",
+      "synced_from": "d0a59291",
+      "upstream_blob": "7e14c889ad0659ba594d615f802c622e390b13c1"
+    },
+    "src/char/Chisa.py": {
+      "local_sha256": "f999ebc80ee669fcdd378c58985743118cd77d87e4b52b1e7b57a249c14ca2a3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b1008bdb70c9cee5126c63ee169e498e27c36251"
+    },
+    "src/char/Chixia.py": {
+      "local_sha256": "ffe0b8d1e20a15203331da47e6a77b5b2c46248a7bd32cbb4d5b546ddf60a847",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2ce29f7bc820f0115033771378117f9fedb48d0e"
+    },
+    "src/char/Ciaccona.py": {
+      "local_sha256": "372e64420210b809a6a96360858267d958cccc9e252ade047f4d2ced26c231d9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0f2106185d8bf05ac3bdcc313ba6cc4c5b8d8005"
+    },
+    "src/char/CustomCharLoader.py": {
+      "local_sha256": "52d7ebe7f83c2d166afd964c8baaa67c32248e9d960ca6bc1f0288e437777c96",
+      "synced_from": "f497bd84",
+      "upstream_blob": "435bee544c7bdbbcb239113115b6903abaa5eb64"
+    },
+    "src/char/Danjin.py": {
+      "local_sha256": "03e2c2d80068b5c0b0b412a958718ff7dc6a4ae509922abe44ac95bcbfccfb77",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0b4a62ea89f52051eda0089fbb618b4d1ab39dff"
+    },
+    "src/char/Denia.py": {
+      "local_sha256": "7ffa85c1e2a83398bb9b2f532618e301c594421892e6cdc0fc2bd1e95fbe75cc",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8bc356083da0505456808a2b17f82c23c53d72e0"
+    },
+    "src/char/Douling.py": {
+      "local_sha256": "098e12f26cfa7dfccdbeee113c23cf0555fcf6052f56b384be322503b8c9acea",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1c23bc9f4e6c3c828ae7e364b370c7d641462b5c"
+    },
+    "src/char/Encore.py": {
+      "local_sha256": "44bbb90a97e16e241c5ecd45f432710a1c165ebed3736ce31a9b1cd6fd568470",
+      "synced_from": "f497bd84",
+      "upstream_blob": "607e1f6e9757206692ae918a36cf832bd3ae9213"
+    },
+    "src/char/Galbrena.py": {
+      "local_sha256": "c64fa7401297906272452fc3faa00b553f195e2568b76d6ffbfebe7cecf79e5c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "db67d42aeca6c2c9130c1e33d87efe8e2565a940"
+    },
+    "src/char/Hiyuki.py": {
+      "local_sha256": "2a02fa199feb60a882398c8d51e82ac17d6415d886aec84a93ed943656bd0fa4",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6f4fb8ed708be463c0c64426a16c13fdbeeda930"
+    },
+    "src/char/Hsin.py": {
+      "local_sha256": "319fcde254eee526b4d7340b9ef5b9e41021503a2d1b3af7e10863425c276337",
+      "synced_from": "f497bd84",
+      "upstream_blob": "12c60e23157da7afaf544231f48ead19da2257d3"
+    },
+    "src/char/Iuno.py": {
+      "local_sha256": "099426924efb831c4b9abd6fb49b4b16c78ff3500a5fd04b4e6a41c76d18e09d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8029865ec162db5fb9d2650a353d157b59663fbb"
+    },
+    "src/char/Jianxin.py": {
+      "local_sha256": "9078752d79b735f71ff43a0681a3b85e1d871b670262d46b398c35ff8603b45a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8a6e3509f6633a07858c116efd334b1c0dc64369"
+    },
+    "src/char/JingRan.py": {
+      "local_sha256": "77b302f66fa4c2d8f56c8a9895a44766d508d29518bdc78b345be56f1ffc4189",
+      "synced_from": "f497bd84",
+      "upstream_blob": "52d4849b56fe4a9481971880fb7cd631e0fec36b"
+    },
+    "src/char/Jinhsi.py": {
+      "local_sha256": "21604cef3c3e9877b0300e0925fc84a7e94872737afa313b39a8cc40c0943387",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fb2c2e88778e178aeb787459f894da423e4b3193"
+    },
+    "src/char/Jiyan.py": {
+      "local_sha256": "13a5d3b4db73f91e856f72179e9794777c1e5021e04a8fb25e5133983d97f470",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3101562512b5ab53b19862c3ff76ee7831b0b9c4"
+    },
+    "src/char/Lily.py": {
+      "local_sha256": "592dc19a4ed16052ada662b293b6aae069b7e75e4dcb2307ad103900e162555b",
+      "synced_from": "d0a59291",
+      "upstream_blob": "236663db21938ba6e8f27cfce2d4b726bdac4cfd"
+    },
+    "src/char/Lingyang.py": {
+      "local_sha256": "bee7cb3021ca0b21d0163c23208312c9a2daaeb60e4afe915d1d5f06f7d62395",
+      "synced_from": "f497bd84",
+      "upstream_blob": "89335a89901b9b9fe01a565500c383a174c4cc05"
+    },
+    "src/char/Linnai.py": {
+      "local_sha256": "cde970f8ff513604d2cdb630da97b351f628e4b2395520323576f5f61b0f3a5d",
+      "synced_from": "f497bd84",
+      "upstream_blob": "bfb030091b7e39f3638cf02f29e3d3d9dc53b847"
+    },
+    "src/char/Lucilla.py": {
+      "local_sha256": "ee233cfa1a2da8d696e5917111dabbefd8c06b8090f64b6cec4a79a60f877634",
+      "synced_from": "f497bd84",
+      "upstream_blob": "be048b6a8fbd667aa12d2756a55589a26d975c7d"
+    },
+    "src/char/Lucy.py": {
+      "local_sha256": "b584e836b9e3eebc4f66bd25c8eb2745eda05bd64109543c6c70304e7342216c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "11b21dac50079c86d865286d6469060fd587e0c2"
+    },
+    "src/char/Luhesi.py": {
+      "local_sha256": "de2bc754ffe5619d3084060ba7843d7d96675f8821a434254a2674cc2b559fc3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "fc78d7c822c569f9ece440469d2f7622a7844c88"
+    },
+    "src/char/Lumi.py": {
+      "local_sha256": "10ab434044fa5f75b56b5fed33e6ae498e9e11467098bfc171e1da74960c3211",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1c926a7b5ebb234057b0bc1bdd154195de6b6098"
+    },
+    "src/char/Lupa.py": {
+      "local_sha256": "df66950099eaf2ca055beb7bbeefaa2805f4903fd9e355f3410d4d63d01976a0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c72cb41b9ad22ee9dfe717f30aeb68298218d5c6"
+    },
+    "src/char/Mornye.py": {
+      "local_sha256": "eb525c0ef2c79b61a94a1142935df445938ca2eb37701ddab9897e61610ff118",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3668f047c5fd424375642c47044404953e3be16a"
+    },
+    "src/char/Mortefi.py": {
+      "local_sha256": "ae95f94ab840573912f9fbf9712fa141d845c499a8b369154ee0a999c0f6de9f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b8c99c737f8675ab7fc4549578519b369ba868a9"
+    },
+    "src/char/Phoebe.py": {
+      "local_sha256": "1447283e4a2ab700d433ea45f45517ee6c2df359f34ed25321d5ac87ae002921",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a3b09a567b0032eeda28b5de7836c643a0605e47"
+    },
+    "src/char/Phrolova.py": {
+      "local_sha256": "700f01dd92c24bd45ac24b74791dbdcbff1c7d6a0a36f46a55d06edd76326b00",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7b3eeeaa3ee2652942351a61a106999b099f0a16"
+    },
+    "src/char/Qingxiao.py": {
+      "local_sha256": "66fd24e3cff4bc68d567c206609630894b173211d206e5a11e9a0d048d06ae15",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7312f1c494588d5fbdf969198549d740e5603e30"
+    },
+    "src/char/Qiuyuan.py": {
+      "local_sha256": "05d88f2baac7d3e6492697f6297d171547d755b63f5d3b877a9e3fb68995a6e0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "071059e8218911f26ddc3cbef0bd4a469b11cd3f"
+    },
+    "src/char/Rebecca.py": {
+      "local_sha256": "9723d296e1523205a033f16c1a964c7dbf55c946797be18951c6a3eafefb6bd0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "7df7eb6a86423be80a5c090843ee76d853fa91a0"
+    },
+    "src/char/Roccia.py": {
+      "local_sha256": "b864b85912d6f11d337b4481bf2c6ecc630f847c778655ce9d0a4b5b5b26b6c1",
+      "synced_from": "f497bd84",
+      "upstream_blob": "560c795b555dd5de776af5143e98db408cb12866"
+    },
+    "src/char/Rover.py": {
+      "local_sha256": "3002646896fd478c9a57d800144ebc95af507d4fa55a8fc001c42d4fb5222779",
+      "synced_from": "f497bd84",
+      "upstream_blob": "83a47d79583f68ca7e591e40cb27a125cb7d03dd"
+    },
+    "src/char/Sanhua.py": {
+      "local_sha256": "162b40dede895c2e586498ecf8f21ca07ad453b4626f82db520f3b8fea41c75f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9a4e73f8a1d8a6d7ed3dc49cced875d306cc8706"
+    },
+    "src/char/ShoreKeeper.py": {
+      "local_sha256": "1471a3b0bdf060c372e605e1d00150bc4c3be4e8ba0390e32733d1d270217ba9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "72f5bf5e5accf9a0f31858fec955f6cf817d4d62"
+    },
+    "src/char/Suisui.py": {
+      "local_sha256": "4f0de7edd7254bd0b17c229ab9ed790976678c51b8b035a5f661f9b62fd09985",
+      "synced_from": "f497bd84",
+      "upstream_blob": "48ce8a0422be10ff9d157f29c9fddce87f1ab9aa"
+    },
+    "src/char/Suoming.py": {
+      "local_sha256": "f95ae91f543a491c9ebe840fe1fce4ffe3d020da502e13e7aae6013fd88dd0e2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "555312331e91320e0d8a08b393eb0a7e3b5730c2"
+    },
+    "src/char/Taoqi.py": {
+      "local_sha256": "ec447aa3b4eef65fcc304f9f9f296eb5134cb9d496cf932037fd22a38c3e3ca9",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5f6957861386804693770ae1f9f84d3b21472933"
+    },
+    "src/char/Verina.py": {
+      "local_sha256": "245f53207768715c617e546da5ed7ed2d2e10406624d8fc532a4758d38718120",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ea6784a8925cfc51064bd1528eab525cb69b29ec"
+    },
+    "src/char/Xiangliyao.py": {
+      "local_sha256": "2ceb903c1a3f5041c0ab92e6265369e155edac1d5ff214a7694e2ca2f1921b8a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ed3862f7e6c08ce8a2d9a5ff54a25b8b34efca03"
+    },
+    "src/char/Xigelika.py": {
+      "local_sha256": "7f79589b0b00fc613453c3fe3a468cca4792a4f0eafdd9b37291e0cd2d845810",
+      "synced_from": "f497bd84",
+      "upstream_blob": "619b8b056e121a6f5a8adb771771379c37b93099"
+    },
+    "src/char/YangYangSp.py": {
+      "local_sha256": "89b56bea591452baaa1e0111cf34e00f793495a26f43d26c15d6a9b55963704f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2d68bb3841bbd1d80969208b83ba76fb3c0de3d9"
+    },
+    "src/char/Yangyang.py": {
+      "local_sha256": "3c250a242c5755a8aad9e38ebec75ca554bcec2168d13166dc4bb1ff71edf7f5",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c6c14f78b82a13ec08263dd2077abc9906907fbb"
+    },
+    "src/char/Yinlin.py": {
+      "local_sha256": "d0cf056ad3c1371ecde1fde1da3ab2d5b8ccb1ae1d0fd993026ce2a145768a25",
+      "synced_from": "f497bd84",
+      "upstream_blob": "9e70cfc74b9fc1763cb3606c94dde43ecf19810d"
+    },
+    "src/char/Youhu.py": {
+      "local_sha256": "bf5ce66d7270eb3e4d8390b41022b4adc9eda4b9e68ec8b975fcacdda61e0eb6",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5d67a7e223e2f5ae2ff255ea1f4822e56ddc3df8"
+    },
+    "src/char/Yuanwu.py": {
+      "local_sha256": "1b5ea7df288242b7ec40a3c0fa65eb45cd87c28dd93637d0631a4d1be84f65ba",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f9045ac857f3a66e7d59905cc503c723254e417b"
+    },
+    "src/char/Zani.py": {
+      "local_sha256": "f48f0999e0f30f0ac1714ef199227892ca483ed67ace9ab057e76a263268ab7f",
+      "synced_from": "d0a59291",
+      "upstream_blob": "2f01e382961572da3eb48ae4127cd6d892d2910c"
+    },
+    "src/char/Zhezhi.py": {
+      "local_sha256": "21086a6f034f60d2aa49c40047346bdbfcac8c18b80e15063a06b6575f358e0b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "c9af1870f7cd369550bfa94ba14e1453aebbcfd4"
+    },
+    "src/combat/CombatCheck.py": {
+      "local_sha256": "26d40f14b42b77860425f18757bb43fced37e3020773fb0bf47cf7592f835dda",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d1c3634a5d79d064a6d9447aa34633da6220855d"
+    },
+    "src/game_launcher.py": {
+      "local_sha256": "d35baabd180bcc67c3c258448d8101f8e53521e1a17a23d34c9eb61d781d17b5",
+      "synced_from": "f497bd84",
+      "upstream_blob": "ccd4d3b63d49e857510a15c1a28c409d9590df8a"
+    },
+    "src/globals.py": {
+      "local_sha256": "9726514a25fc49b6837026028ef35d5f524f7e2fde0f82fec197d4e8a0b06ffc",
+      "synced_from": "f497bd84",
+      "upstream_blob": "1fd09c731bffd994161f7b4b731e92c47a32ad92"
+    },
+    "src/gui/MultiAccountConfigDialog.py": {
+      "local_sha256": "907f6a1e38dc6ff3b5e82274529b14a0868d550027500efc41928409b3993804",
+      "synced_from": "d0a59291",
+      "upstream_blob": "896e2ecc47ed2fda8b0411c5d531eaa77d565cff"
+    },
+    "src/gui/MultiAccountConfigTab.py": {
+      "local_sha256": "0e2027c44f14e507e598356a3e973f8c1300017aae5856f4681aa6dec74aa23d",
+      "synced_from": "d0a59291",
+      "upstream_blob": "af91b994101d19b7f9747138a579af5f5188bf3a"
+    },
+    "src/gui/__init__.py": {
+      "local_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    "src/scene/WWScene.py": {
+      "local_sha256": "9fee86d024230d18c7d3fc8c03cd7d1b12c841fc764c1b8f8df677ef138998b7",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3a051d8efd094ad639c03812817c255c815ff5a4"
+    },
+    "src/task/AutoCombatTask.py": {
+      "local_sha256": "5a2745060107c860022d4a91928ade659aa0576309b26999ae90231fa10b675a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "df60f7fcde46772819e2bc5ec8afe52a90d88a9a"
+    },
+    "src/task/AutoLoginTask.py": {
+      "local_sha256": "ccc5b68adca7a64c8f4f48a0c3f0e7ea6a6e06d4125d72a92dcc0378b99353b2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a55dd910c71a343b1e91add0412be1009b5d03cf"
+    },
+    "src/task/AutoPickTask.py": {
+      "local_sha256": "645ca241a2c86119670bd3e94d10184cbf9c89fbe87717e2d54d9a79db68991b",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d761a5625a148676a1c2469dbc7f4bdc096250e7"
+    },
+    "src/task/BaseCombatTask.py": {
+      "local_sha256": "55e9e4977acda518c594cd4ca2091bbab279d89e02abfdf9ced621113b81d74e",
+      "synced_from": "d0a59291",
+      "upstream_blob": "3d4bd7c7d42cf43e51592aaf73f59326401d2e09"
+    },
+    "src/task/BaseWWTask.py": {
+      "local_sha256": "bcf9466aca3cbcf8280865fcd72d1541d10353c4ab519603352494d9e089f63b",
+      "synced_from": "d0a59291",
+      "upstream_blob": "0ff1e1251273af4313facd5c4b71a77eabc13a78"
+    },
+    "src/task/ChangeEchoTask.py": {
+      "local_sha256": "fda438595d791e80295530be788a86422400eaea6f125fb6903f7a040e7a8b79",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3added48de31b4a88ce725210a77a0566d1fa3de"
+    },
+    "src/task/CharacterCodeTask.py": {
+      "local_sha256": "66a900ce59c5c82bb27478c8a2aa011852e439324ba9dc62f8edbf91fad7dac3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "6eab5bf16363aa7ca768fb7d08da282b28d42730"
+    },
+    "src/task/DailyTask.py": {
+      "local_sha256": "3753f5c339be2bbfadb2d3ed5b2aca70efddac1fccc82c95272454d8db751171",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b45e845b40c396c3a5b77dfb45527697bbb70811"
+    },
+    "src/task/DiagnosisTask.py": {
+      "local_sha256": "c11bc1eeba3338694f6b95f299b9f9f62dc6e0a32a2f4ece878599fc12802812",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5a162e7a4334a143c9694322f3537f0c0359c025"
+    },
+    "src/task/DomainTask.py": {
+      "local_sha256": "a172ca9546db53b9529b5b52d12b80656b93ccf559a07a8bd3bfd196e21fa7bd",
+      "synced_from": "f497bd84",
+      "upstream_blob": "baf0eb6d4008a2d011bc80ce22dd9865ea77153e"
+    },
+    "src/task/EnhanceEchoTask.py": {
+      "local_sha256": "a3d2694b38ade4c80993395d53a040b3c6c20d78318e519dcc616c28144f9169",
+      "synced_from": "f497bd84",
+      "upstream_blob": "71adb6eb303c709652453691d08624db43de1c35"
+    },
+    "src/task/FarmEchoTask.py": {
+      "local_sha256": "e338348ddb1987a5fb45105f7d1a9333f64a7091089b90227e13ad6da6d912af",
+      "synced_from": "f497bd84",
+      "upstream_blob": "f80296a812ce896da4885b00d05c55c11acfa97f"
+    },
+    "src/task/FarmMapTask.py": {
+      "local_sha256": "f0886739ca2332c89e6faad1d7d660ea3f54ba138c28f30e963760ebd3c32fbe",
+      "synced_from": "f497bd84",
+      "upstream_blob": "44f20034c2e170dcddbe0ce156ccdc4d7d7f15ae"
+    },
+    "src/task/FastTravelTask.py": {
+      "local_sha256": "b2a932b468e750e534787b709b8241aa4eda6ac94e602374672ebacc2a2cf72c",
+      "synced_from": "f497bd84",
+      "upstream_blob": "deae353397e7d010acc6a364372aef01ddbe063d"
+    },
+    "src/task/FiveToOneTask.py": {
+      "local_sha256": "b38d5188eda239c94b09d5d558366a61117393fce634db73aba9c83d901c99ca",
+      "synced_from": "f497bd84",
+      "upstream_blob": "af8e3a8338ac55c225a759c26b8b69c48f07328a"
+    },
+    "src/task/ForgeryTask.py": {
+      "local_sha256": "611a3561b59962942754958705d900c1dfd050582655d50cbc6d2c19630ed4ea",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3436b89b99a0a182f1bd305c013f5c95cad2be8d"
+    },
+    "src/task/GardenTask.py": {
+      "local_sha256": "1366ec35df8b57d9ecfbf164a6aadec8525078f7ece201480e3b6c1cecc3fac0",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3f2feda80f13ace060ec00e71afa82c05eded356"
+    },
+    "src/task/MergeEchoTask.py": {
+      "local_sha256": "1765eda0506f4e3b5659b91a7578f3a7339a8d8401e9cde22877aea04717b828",
+      "synced_from": "f497bd84",
+      "upstream_blob": "22825b8b2d87dc7f8d397ffcdeea2a466d969af2"
+    },
+    "src/task/MouseResetTask.py": {
+      "local_sha256": "0e573a1c994fabfe5d2ee26832a52e1682a920319520b23300582c3bd3d7571a",
+      "synced_from": "f497bd84",
+      "upstream_blob": "5976bc962f8ec22ac2e9f5406ece05b9dc5347aa"
+    },
+    "src/task/MultiAccountConfigTask.py": {
+      "local_sha256": "567cc3af260f4d0e3f0b9f4d72c549be020f30e71d80d2bef9eb480d4332da5f",
+      "synced_from": "d0a59291",
+      "upstream_blob": "90f45200067dffae3e880c928393d14fa6cae3cc"
+    },
+    "src/task/MultiAccountDailyTask.py": {
+      "local_sha256": "5988e1bbc0c5f6762dda16391cd55c1cb4a13cfcdda284a7a2cc88a068bd49f4",
+      "synced_from": "d0a59291",
+      "upstream_blob": "9439e41643ce770c61a05d25931f5f71e27f110d"
+    },
+    "src/task/NightmareNestTask.py": {
+      "local_sha256": "6aaab38fbf2e84df3cff72269b26b3c0c33f4684ff432574c8215d5a8dee2e2d",
+      "synced_from": "d0a59291",
+      "upstream_blob": "18f605613065174b3bca5f7c00053f928ad39593"
+    },
+    "src/task/SimulationTask.py": {
+      "local_sha256": "ecfcc662e4a2020eb0e0e7dcebcf0615bfd219f791d335e418c32d0b55838551",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b54e4500040bd7b05883277dfe5212f85735fcfd"
+    },
+    "src/task/SkipBaseTask.py": {
+      "local_sha256": "5fe2adbc16bb8e147b3d42754bfdb19064946427bf1976524e510e7750f5c1a3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4f8702d6279ddecdda1e1fc906b5f158fa392cfe"
+    },
+    "src/task/SkipDialogTask.py": {
+      "local_sha256": "32d3100c673fe7f8e32d11c6b333d571d854a0cf2810076a7cdc9d5c205c40f3",
+      "synced_from": "f497bd84",
+      "upstream_blob": "2dde148a1fc8ef69f7dcbd27e06bf752760e4e68"
+    },
+    "src/task/TacetEliminationTask.py": {
+      "local_sha256": "37bf53460597fecbcdf3f495ed7f59c03110c7780641fca8a8c7858de4cb95fc",
+      "synced_from": "f497bd84",
+      "upstream_blob": "04bbd2b42f2cddea38c1bd8b4ad74df94a6466de"
+    },
+    "src/task/TacetTask.py": {
+      "local_sha256": "e48f9e968663fc1656dedf774d6ad162688f1f9261e8b414dde3696db1614a62",
+      "synced_from": "f497bd84",
+      "upstream_blob": "61db24c6c9b028d8b835cd127bd2135de3b284be"
+    },
+    "src/task/WWOneTimeTask.py": {
+      "local_sha256": "8245ecff202b0bed50b0dfaebde3387ccceb49aadc80e90b47a749b67ee7ec20",
+      "synced_from": "f497bd84",
+      "upstream_blob": "66bd3532687bee66b05a587a096de96079ab986e"
+    },
+    "src/task/account/MultiAccountConfigStore.py": {
+      "local_sha256": "062502fe134ed1558430dc8e6847f725316487564464bb06ad6ba1d9c7f8bbf2",
+      "synced_from": "f497bd84",
+      "upstream_blob": "3d72049d61ff3eb02bf72d9db586ac035c529507"
+    },
+    "src/task/account/RuntimeTaskConfig.py": {
+      "local_sha256": "d82693c8bb5829c0408cd7a49b44003db99103fb5e1010d675d4630e582c8198",
+      "synced_from": "f497bd84",
+      "upstream_blob": "a060a4c4be4d80f662fd32ee4b0d730b416b2316"
+    },
+    "src/task/account/__init__.py": {
+      "local_sha256": "877332dc22783aacebaf1068099d79a1d9a5b2a9eb9d068c181eefd689bcd2db",
+      "synced_from": "f497bd84",
+      "upstream_blob": "4d4bddf4259f20a639ab603b81e5aec9a441377a"
+    },
+    "src/task/process_feature.py": {
+      "local_sha256": "c0b2e4ba2c195105e375e509fa6f005ee4b19c2155c829e706e5656c73e82d0f",
+      "synced_from": "f497bd84",
+      "upstream_blob": "0d48a5c62e0685631793004f0bc8e9f3b0d2ba90"
+    },
+    "src/task/task_icons.py": {
+      "local_sha256": "991aed0aeeef7d7b9753e5eae1ac1e98bbaf65be165daf5a2de2aef1fc69dff4",
+      "synced_from": "f497bd84",
+      "upstream_blob": "d2b370d96a0f24945723740813e3f1b90da595db"
+    },
+    "src/web/character_code/index.js": {
+      "local_sha256": "d2c36d3db8c4152e2703aa7c89d9890852eeb57bc8565f89f8a123ceeb152cb6",
+      "synced_from": "f497bd84",
+      "upstream_blob": "b6f882252a8328660a0232c7cd8f671c389419d5"
+    }
+  },
+  "managed_roots": [
+    "src/",
+    "assets/",
+    "i18n/"
+  ],
+  "preserved_deletions": {
+    "src/char/CustomCharLoader.py": {
+      "local_sha256": "52d7ebe7f83c2d166afd964c8baaa67c32248e9d960ca6bc1f0288e437777c96",
+      "noted_at": "2026-11-17T17:35:13Z",
+      "upstream_blob": "435bee544c7bdbbcb239113115b6903abaa5eb64"
+    },
+    "src/task/CharacterCodeTask.py": {
+      "local_sha256": "66a900ce59c5c82bb27478c8a2aa011852e439324ba9dc62f8edbf91fad7dac3",
+      "noted_at": "2026-11-17T17:35:18Z",
+      "upstream_blob": "6eab5bf16363aa7ca768fb7d08da282b28d42730"
+    },
+    "src/task/TacetEliminationTask.py": {
+      "local_sha256": "37bf53460597fecbcdf3f495ed7f59c03110c7780641fca8a8c7858de4cb95fc",
+      "noted_at": "2026-11-17T17:35:20Z",
+      "upstream_blob": "04bbd2b42f2cddea38c1bd8b4ad74df94a6466de"
+    },
+    "src/web/character_code/index.js": {
+      "local_sha256": "d2c36d3db8c4152e2703aa7c89d9890852eeb57bc8565f89f8a123ceeb152cb6",
+      "noted_at": "2026-11-17T17:35:20Z",
+      "upstream_blob": "b6f882252a8328660a0232c7cd8f671c389419d5"
+    }
+  },
+  "schema": 1,
+  "upstream": {
+    "base_commit": "f497bd8400372ac514b810700241a663ff53b79f",
+    "base_commit_short": "f497bd84",
+    "base_date": "2026-11-05T17:15:48Z",
+    "base_message": "Update ok-script to 3.0.4",
+    "branch": "master",
+    "last_apply_at": "2026-11-17T17:35:20Z",
+    "last_checked_at": "2026-11-17T17:35:20Z",
+    "last_checked_commit": "d0a59291332b1feb438f90d57b370d7f4ec2d831",
+    "last_target_commit": "d0a59291332b1feb438f90d57b370d7f4ec2d831",
+    "last_target_date": "2026-11-16T10:03:07Z",
+    "last_target_roots": [
+      "src/",
+      "assets/",
+      "i18n/"
+    ],
+    "last_target_short": "d0a59291",
+    "repo": "ok-oldking/ok-wuthering-waves"
+  }
+}

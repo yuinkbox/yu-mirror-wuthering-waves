@@ -86,7 +86,24 @@ yu-mingchao-pro/
 - 登录窗在深色背景下曾报「小白块」闪烁，已做「窗口=卡片 + 窗口自绘磨砂兜底」两处修复，待验证。
 - 自更新已关闭（`update_pyappify` 注释掉），避免被替换成 ok-ww 官方版。
 
-## 8. 许可
+## 8. 上游核心同步
+
+`src/`、`assets/`、`i18n/` 是 ok-ww 上游代码，已用 `upstream.lock.json` 建立基线
+（f497bd84，412 个文件，初始 0 个本地修改），并已于 2026-11-18 同步到 `d0a59291`。
+同步方式：
+
+```powershell
+# 只看更新
+.\.venv\Scripts\python.exe tools\upstream_sync.py --check --paths all
+
+# 应用（默认保留上游删除的文件，先备份，冲突不覆盖）
+.\.venv\Scripts\python.exe tools\upstream_sync.py --apply --paths src --yes
+```
+
+也可以双击 `检查核心更新.bat` / `更新核心代码.bat`。冲突处理、依赖升级和当前上游状态
+详见 [UPSTREAM_SYNC.md](UPSTREAM_SYNC.md)。
+
+## 9. 许可
 
 上游 ok-ww 为 **AGPL-3.0**：自用随意；一旦分发（发安装包、公开下载、联网提供服务），
 必须继续以 AGPL-3.0 开源完整代码并保留 `LICENSE.txt` / `CREDITS.md` 的署名。

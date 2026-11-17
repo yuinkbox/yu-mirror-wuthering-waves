@@ -10,7 +10,7 @@ from src.task.task_icons import task_icon
 
 APP_NAME = "Yu-Mirror · 鸣潮"
 APP_ID = "yu-mirror-wuthering-waves"
-version = "1.1.0"
+version = "1.2.0"
 
 
 def _find_most_recently_run_pc_exe():

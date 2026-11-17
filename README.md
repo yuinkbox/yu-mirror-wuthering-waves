@@ -309,6 +309,24 @@ Qt Widgets 这套是 CPU 光栅，能调顺，但上限有限。
 .\run_tests.ps1                                                # 跑测试
 ```
 
+### 跟进 ok-ww 上游
+
+`src/`、`assets/`、`i18n/` 与上游基线逐字节一致，可以用 `tools/upstream_sync.py`
+持续同步（自动备份、冲突不覆盖、默认保留上游删除的文件）：
+
+```powershell
+# 只看更新
+.\.venv\Scripts\python.exe tools\upstream_sync.py --check --paths all
+
+# 应用
+.\.venv\Scripts\python.exe tools\upstream_sync.py --apply --paths src --yes
+```
+
+也可以直接在软件里打开 **「关于」→「检查核心更新」**；或者双击安装目录里的
+`检查核心更新.bat` / `更新核心代码.bat`。本项目已于 2026-11-18 同步到
+上游 `d0a59291`，并把依赖升级到 `ok-script 3.0.5b9` / `onnxocr-ppocrv6`；以后上游
+再更新时按 [UPSTREAM_SYNC.md](UPSTREAM_SYNC.md) 操作即可。
+
 ---
 
 ## ❓常见问题（沿用上游经验）
